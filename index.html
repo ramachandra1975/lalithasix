@@ -1,0 +1,1917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Lalitopākhyāna — Part VI | Nāmas 575–766 | Scholarly Edition | lalithafive.culturalmusings.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Noto+Serif+Devanagari:wght@400;500;600;700&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --gold: #c8a84b;
+  --gold-light: #e2c97e;
+  --gold-dim: #8a7035;
+  --crimson: #8b1a1a;
+  --crimson-light: #b52020;
+  --ink: #1a1208;
+  --parchment: #fdf6e8;
+  --parchment-dark: #f5ecd4;
+  --parchment-deep: #ede0c0;
+  --text-main: #2a1f0e;
+  --text-muted: #5c4a2a;
+  --text-light: #7a6040;
+  --border: #c8a84b44;
+  --border-strong: #c8a84b88;
+  --shadow: rgba(26,18,8,0.18);
+  --red-accent: #9b2335;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--parchment);
+  color:var(--text-main);
+  font-family:'EB Garamond',Georgia,serif;
+  font-size:17px;
+  line-height:1.78;
+  min-height:100vh;
+  background-image:
+    radial-gradient(ellipse at 20% 0%,rgba(200,168,75,0.07) 0%,transparent 60%),
+    radial-gradient(ellipse at 80% 100%,rgba(139,26,26,0.05) 0%,transparent 60%);
+}
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  opacity:0.4;
+}
+#toc-toggle{
+  position:fixed;top:1.2rem;left:1.2rem;z-index:200;
+  background:var(--ink);color:var(--gold);
+  border:1px solid var(--gold-dim);
+  padding:.45rem .9rem;font-family:'Cinzel',serif;font-size:.78rem;
+  letter-spacing:.08em;cursor:pointer;border-radius:2px;
+  box-shadow:0 2px 12px var(--shadow);transition:background .2s;
+}
+#toc-toggle:hover{background:#2a1f0e;}
+#toc-panel{
+  position:fixed;top:0;left:0;height:100vh;width:310px;
+  background:var(--ink);border-right:1px solid var(--gold-dim);
+  z-index:190;overflow-y:auto;
+  transform:translateX(-100%);
+  transition:transform .32s cubic-bezier(.4,0,.2,1);
+  padding:1.5rem 1.5rem 3rem;
+  box-shadow:4px 0 32px rgba(0,0,0,0.4);
+}
+#toc-panel.open{transform:translateX(0);}
+#toc-close{background:none;border:none;color:var(--gold-light);font-size:1.1rem;cursor:pointer;float:right;margin-bottom:1rem;font-family:'EB Garamond',serif;}
+#toc-panel h3{font-family:'Cinzel',serif;color:var(--gold);font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:1.4rem;padding-bottom:.6rem;border-bottom:1px solid var(--gold-dim);}
+#toc-panel a{display:block;color:#c8a84baa;text-decoration:none;font-family:'EB Garamond',serif;font-size:.92rem;padding:.32rem 0;border-bottom:1px solid #ffffff08;transition:color .18s;line-height:1.4;}
+#toc-panel a:hover{color:var(--gold-light);}
+#toc-panel a.sub{padding-left:1rem;font-size:.86rem;color:#c8a84b77;}
+#toc-panel a.sub:hover{color:#c8a84bcc;}
+main{max-width:820px;margin:0 auto;padding:3rem 2.5rem 6rem;position:relative;z-index:1;}
+.masthead{text-align:center;padding:3.5rem 1rem 2.5rem;border-bottom:1px solid var(--border-strong);margin-bottom:3rem;}
+.masthead .seed-mantra{font-family:'Noto Serif Devanagari',serif;color:var(--gold);font-size:1.6rem;letter-spacing:.22em;margin-bottom:1.6rem;opacity:.85;}
+.masthead .part-label{font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:.22em;color:var(--text-light);text-transform:uppercase;margin-bottom:.6rem;}
+.masthead h1{font-family:'Cinzel',serif;font-size:2rem;font-weight:600;color:var(--ink);line-height:1.2;margin-bottom:.5rem;}
+.masthead .devanagari-title{font-family:'Noto Serif Devanagari',serif;font-size:1.5rem;color:var(--crimson);margin-bottom:1rem;}
+.masthead .subtitle{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--text-muted);font-style:italic;line-height:1.6;max-width:600px;margin:0 auto 1.2rem;}
+.masthead .edition-line{font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.18em;color:var(--gold-dim);text-transform:uppercase;}
+.breadcrumb{text-align:center;font-family:'EB Garamond',serif;font-size:.9rem;color:var(--text-light);margin-top:1.2rem;}
+.breadcrumb a{color:var(--crimson);text-decoration:none;}
+.breadcrumb a:hover{text-decoration:underline;}
+.ornament{text-align:center;margin:2.2rem 0;color:var(--gold);font-size:1.1rem;letter-spacing:.5em;opacity:.6;}
+.ornament-line{display:flex;align-items:center;gap:1rem;margin:2.5rem 0;}
+.ornament-line::before,.ornament-line::after{content:'';flex:1;height:1px;background:linear-gradient(to right,transparent,var(--gold-dim),transparent);}
+.ornament-line span{color:var(--gold);font-size:.95rem;white-space:nowrap;}
+.page-marker{font-family:'Cinzel',serif;font-size:.68rem;letter-spacing:.18em;color:var(--gold-dim);text-align:right;text-transform:uppercase;margin:2.8rem 0 .3rem;padding-top:.6rem;border-top:1px solid var(--border);}
+.section-block{margin-bottom:3.5rem;}
+.section-header{margin-bottom:2rem;padding-bottom:.8rem;border-bottom:2px solid var(--border-strong);}
+.section-number{font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.2em;color:var(--gold-dim);text-transform:uppercase;margin-bottom:.4rem;}
+.section-title-dev{font-family:'Noto Serif Devanagari',serif;font-size:1.25rem;color:var(--crimson);margin-bottom:.3rem;}
+.section-title-eng{font-family:'Cinzel',serif;font-size:1.35rem;font-weight:600;color:var(--ink);margin-bottom:.3rem;}
+.section-subtitle{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--text-muted);}
+.nama-entry{margin-bottom:2.4rem;padding:1.4rem 1.6rem 1.4rem 1.8rem;background:rgba(255,255,255,0.45);border-left:3px solid var(--gold);border-radius:0 4px 4px 0;box-shadow:0 1px 8px rgba(26,18,8,.06);position:relative;}
+.nama-entry::before{content:'';position:absolute;top:0;right:0;width:40px;height:40px;background:radial-gradient(circle at top right,rgba(200,168,75,0.06),transparent 70%);}
+.nama-number{font-family:'Cinzel',serif;font-size:.72rem;color:var(--gold-dim);letter-spacing:.12em;margin-bottom:.25rem;}
+.nama-dev{font-family:'Noto Serif Devanagari',serif;font-size:1.18rem;color:var(--crimson);font-weight:600;margin-bottom:.15rem;line-height:1.5;}
+.nama-roman{font-family:'Cinzel',serif;font-size:.95rem;color:var(--ink);font-style:italic;margin-bottom:.35rem;}
+.nama-meaning{font-family:'EB Garamond',serif;font-size:1rem;color:var(--text-muted);line-height:1.6;}
+.nama-tags{margin-top:.5rem;display:flex;flex-wrap:wrap;gap:.4rem;}
+.tag{font-family:'Cinzel',serif;font-size:.62rem;letter-spacing:.1em;padding:.15rem .5rem;border:1px solid var(--border-strong);color:var(--gold-dim);border-radius:2px;text-transform:uppercase;}
+.nama-table{width:100%;border-collapse:collapse;margin:1.2rem 0 2rem;}
+.nama-table tr{border-bottom:1px solid var(--border);}
+.nama-table tr:last-child{border-bottom:none;}
+.nama-table td{padding:.7rem .6rem;vertical-align:top;font-family:'EB Garamond',serif;font-size:.97rem;}
+.nama-table .num{color:var(--gold-dim);font-family:'Cinzel',serif;font-size:.7rem;white-space:nowrap;width:3rem;letter-spacing:.08em;}
+.nama-table .dev{font-family:'Noto Serif Devanagari',serif;color:var(--crimson);font-size:1.05rem;width:44%;line-height:1.5;}
+.nama-table .meaning{color:var(--text-muted);line-height:1.5;}
+blockquote{margin:1.8rem 0;padding:1.2rem 1.6rem 1.2rem 2rem;border-left:3px solid var(--crimson);background:rgba(139,26,26,0.04);border-radius:0 4px 4px 0;}
+blockquote p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.08rem;color:var(--text-muted);line-height:1.7;}
+blockquote cite{display:block;margin-top:.6rem;font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.1em;color:var(--gold-dim);font-style:normal;}
+.chapter-block{background:var(--parchment-dark);border:1px solid var(--border-strong);border-radius:4px;padding:2rem 2rem 1.8rem;margin:2.5rem 0;position:relative;overflow:hidden;}
+.chapter-block::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--crimson),var(--gold),var(--crimson));}
+.chapter-label{font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:.4rem;}
+.chapter-title-dev{font-family:'Noto Serif Devanagari',serif;font-size:1.3rem;color:var(--crimson);margin-bottom:.2rem;}
+.chapter-title-eng{font-family:'Cinzel',serif;font-size:1.18rem;color:var(--ink);font-weight:600;margin-bottom:1rem;}
+.verse{margin:1.2rem 0;padding:.8rem 1rem;background:rgba(255,255,255,0.5);border-radius:3px;}
+.verse-num{font-family:'Cinzel',serif;font-size:.68rem;color:var(--gold-dim);letter-spacing:.1em;margin-bottom:.3rem;}
+.verse-text{font-family:'EB Garamond',serif;font-size:1rem;color:var(--text-main);line-height:1.75;}
+.verse-dev{font-family:'Noto Serif Devanagari',serif;font-size:1rem;color:var(--text-muted);margin-top:.3rem;}
+.footnote-block{margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--border);}
+.footnote-title{font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.15em;color:var(--gold-dim);text-transform:uppercase;margin-bottom:.8rem;}
+.footnote{font-family:'EB Garamond',serif;font-size:.93rem;color:var(--text-light);line-height:1.65;margin-bottom:.5rem;padding-left:1.2rem;position:relative;}
+.footnote::before{content:attr(data-n);position:absolute;left:0;font-family:'Cinzel',serif;font-size:.7rem;color:var(--gold-dim);}
+.phil-box{background:linear-gradient(135deg,rgba(200,168,75,0.07) 0%,rgba(139,26,26,0.04) 100%);border:1px solid var(--border-strong);border-radius:4px;padding:1.6rem 1.8rem;margin:2rem 0;}
+.phil-box-title{font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:.16em;color:var(--gold);text-transform:uppercase;margin-bottom:.8rem;padding-bottom:.5rem;border-bottom:1px solid var(--border);}
+.phil-box p{font-size:1rem;color:var(--text-muted);line-height:1.75;}
+.colophon{text-align:center;padding:3rem 1rem 2rem;border-top:2px solid var(--border-strong);margin-top:4rem;}
+.colophon .final-dev{font-family:'Noto Serif Devanagari',serif;font-size:1.8rem;color:var(--gold);margin-bottom:1rem;opacity:.9;}
+.colophon p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.05rem;color:var(--text-muted);margin-bottom:.5rem;}
+.colophon .nav-links{margin-top:1.5rem;display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;}
+.colophon .nav-links a{font-family:'Cinzel',serif;font-size:.78rem;letter-spacing:.12em;color:var(--crimson);text-decoration:none;text-transform:uppercase;}
+.colophon .nav-links a:hover{text-decoration:underline;}
+p{margin-bottom:1.1rem;}
+p:last-child{margin-bottom:0;}
+.intro-prose{font-size:1.02rem;color:var(--text-muted);line-height:1.8;margin-bottom:1.8rem;}
+.highlight-dev{font-family:'Noto Serif Devanagari',serif;color:var(--crimson);font-size:1.08em;}
+.highlight-roman{font-style:italic;color:var(--crimson);}
+.page-break{border:none;border-top:1px dashed var(--border);margin:3rem 0;}
+#scrolltop{position:fixed;bottom:2rem;right:2rem;background:var(--ink);color:var(--gold);border:1px solid var(--gold-dim);width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:1rem;z-index:100;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px var(--shadow);opacity:0;transition:opacity .3s;}
+#scrolltop.visible{opacity:1;}
+
+/* ── SONIC TAB STYLES ── */
+#sonic-analysis-section{font-family:'EB Garamond',Georgia,serif;font-size:17px;line-height:1.78;margin-bottom:3rem;}
+.sonic-masthead{text-align:center;padding:2.8rem 1rem 2rem;border-bottom:1px solid var(--border-strong);margin-bottom:0;position:relative;overflow:hidden;}
+.sonic-masthead::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 0%,rgba(200,168,75,0.09) 0%,transparent 65%);}
+.sonic-seed-mantra{font-family:'Noto Serif Devanagari',serif;color:var(--gold);font-size:1.5rem;letter-spacing:.22em;margin-bottom:1.2rem;opacity:.85;}
+.sonic-part-label{font-family:'Cinzel',serif;font-size:.75rem;letter-spacing:.22em;color:var(--text-light);text-transform:uppercase;margin-bottom:.5rem;}
+.sonic-devanagari-title{font-family:'Noto Serif Devanagari',serif;font-size:1.3rem;color:var(--crimson);margin-bottom:.28rem;}
+.sonic-h1{font-family:'Cinzel',serif;font-size:1.5rem;font-weight:600;color:var(--ink);line-height:1.2;margin-bottom:.4rem;}
+.sonic-subtitle{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--text-muted);line-height:1.6;max-width:580px;margin:0 auto .8rem;}
+.sonic-edition-line{font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.18em;color:var(--gold-dim);text-transform:uppercase;}
+.sonic-tab-nav{display:flex;flex-wrap:wrap;gap:0;border-bottom:2px solid var(--border-strong);background:var(--parchment-dark);padding:0 1.5rem;}
+.sonic-tab-btn{font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:.75rem 1.1rem;background:none;border:none;color:var(--text-light);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;transition:color .2s,border-color .2s,background .2s;white-space:nowrap;line-height:1.3;text-align:center;}
+.sonic-tab-btn:hover{color:var(--gold);background:rgba(200,168,75,0.07);}
+.sonic-tab-btn.s-active{color:var(--crimson);border-bottom:2px solid var(--crimson);background:var(--parchment);}
+.sonic-tab-panel{display:none;padding:2rem 2rem 1rem;}
+.sonic-tab-panel.s-active{display:block;}
+.sonic-sec-header{margin-bottom:1.4rem;padding-bottom:.7rem;border-bottom:2px solid var(--border-strong);}
+.sonic-sec-num{font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.2em;color:var(--gold-dim);text-transform:uppercase;margin-bottom:.4rem;}
+.sonic-sec-dev{font-family:'Noto Serif Devanagari',serif;font-size:1.15rem;color:var(--crimson);margin-bottom:.25rem;}
+.sonic-sec-eng{font-family:'Cinzel',serif;font-size:1.2rem;font-weight:600;color:var(--ink);margin-bottom:.25rem;}
+.sonic-sec-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.97rem;color:var(--text-muted);}
+.sonic-svara-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.7rem;margin:1.2rem 0 1.8rem;}
+.sonic-svara-card{background:rgba(255,255,255,.5);border:1px solid var(--border-strong);border-radius:4px;padding:.9rem 1rem;position:relative;overflow:hidden;}
+.sonic-svara-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,var(--crimson),var(--gold));}
+.sonic-svara-num{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.12em;color:var(--gold-dim);text-transform:uppercase;margin-bottom:.25rem;}
+.sonic-svara-dev{font-family:'Noto Serif Devanagari',serif;color:var(--crimson);font-size:1.1rem;font-weight:600;line-height:1.4;}
+.sonic-svara-roman{font-family:'Cinzel',serif;font-size:.82rem;color:var(--ink);font-style:italic;}
+.sonic-svara-desc{font-family:'EB Garamond',serif;font-size:.88rem;color:var(--text-muted);margin-top:.3rem;line-height:1.5;}
+.sonic-svara-deity{font-family:'EB Garamond',serif;font-size:.85rem;font-style:italic;color:var(--gold-dim);margin-top:.2rem;}
+.sonic-mela-table{width:100%;border-collapse:collapse;margin:1rem 0 1.6rem;font-size:.88rem;}
+.sonic-mela-table thead tr{background:var(--parchment-deep);border-bottom:2px solid var(--border-strong);}
+.sonic-mela-table thead td{font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.1em;color:var(--gold-dim);text-transform:uppercase;padding:.55rem .6rem;}
+.sonic-mela-table tbody tr{border-bottom:1px solid var(--border);}
+.sonic-mela-table tbody tr:nth-child(even){background:rgba(255,255,255,.3);}
+.sonic-mela-table tbody tr:hover{background:rgba(200,168,75,.07);}
+.sonic-mela-table tbody td{padding:.5rem .6rem;color:var(--text-muted);font-family:'EB Garamond',serif;line-height:1.45;}
+.sonic-mela-num{font-family:'Cinzel',serif;color:var(--gold-dim);font-size:.68rem;letter-spacing:.08em;width:2.5rem;}
+.sonic-mela-dev{font-family:'Noto Serif Devanagari',serif;color:var(--crimson);font-size:.97rem;width:34%;}
+.sonic-mela-deity{font-style:italic;color:var(--text-light);}
+.sonic-alankara-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1.2rem 0;}
+.sonic-alankara-card{background:rgba(255,255,255,.45);border-left:3px solid var(--gold);border-radius:0 4px 4px 0;padding:1rem 1.1rem;box-shadow:0 1px 6px rgba(26,18,8,.05);}
+.sonic-alankara-num{font-family:'Cinzel',serif;font-size:.66rem;color:var(--gold-dim);letter-spacing:.12em;margin-bottom:.2rem;}
+.sonic-alankara-dev{font-family:'Noto Serif Devanagari',serif;font-size:1rem;color:var(--crimson);font-weight:600;line-height:1.4;}
+.sonic-alankara-roman{font-family:'Cinzel',serif;font-size:.82rem;color:var(--ink);font-style:italic;margin-bottom:.3rem;}
+.sonic-alankara-desc{font-family:'EB Garamond',serif;font-size:.93rem;color:var(--text-muted);line-height:1.6;}
+.sonic-alankara-pattern{font-family:'EB Garamond',serif;font-size:.88rem;color:var(--gold-dim);margin-top:.4rem;font-style:italic;}
+.sonic-xref-table{width:100%;border-collapse:collapse;margin:1rem 0 1.8rem;font-size:.88rem;}
+.sonic-xref-table thead tr{background:var(--parchment-deep);border-bottom:2px solid var(--border-strong);}
+.sonic-xref-table thead td{font-family:'Cinzel',serif;font-size:.63rem;letter-spacing:.1em;color:var(--gold-dim);text-transform:uppercase;padding:.55rem .6rem;}
+.sonic-xref-table tbody tr{border-bottom:1px solid var(--border);}
+.sonic-xref-table tbody tr:nth-child(even){background:rgba(255,255,255,.3);}
+.sonic-xref-table tbody tr:hover{background:rgba(200,168,75,.07);}
+.sonic-xref-table tbody td{padding:.5rem .55rem;font-family:'EB Garamond',serif;color:var(--text-muted);line-height:1.45;vertical-align:top;}
+.sonic-xref-num{font-family:'Cinzel',serif;color:var(--gold-dim);font-size:.68rem;letter-spacing:.08em;width:3rem;white-space:nowrap;}
+.sonic-xref-dev{font-family:'Noto Serif Devanagari',serif;color:var(--crimson);font-size:.97rem;width:28%;}
+.sonic-xref-sonic{color:var(--text-light);font-style:italic;}
+@media(max-width:640px){
+  main{padding:2rem 1.1rem 4rem;}
+  .masthead h1{font-size:1.4rem;}
+  .nama-entry{padding:1rem 1rem 1rem 1.2rem;}
+  .nama-table .dev{width:36%;}
+  #toc-panel{width:260px;}
+  .sonic-tab-btn{padding:.6rem .7rem;font-size:.65rem;}
+  .sonic-tab-panel{padding:1.5rem 1rem 1rem;}
+  .sonic-xref-table thead td:nth-child(4),.sonic-xref-table tbody td:nth-child(4){display:none;}
+}
+</style>
+</head>
+<body>
+
+<button id="toc-toggle" onclick="document.getElementById('toc-panel').classList.toggle('open')">☰ Contents</button>
+
+<nav id="toc-panel">
+  <button id="toc-close" onclick="document.getElementById('toc-panel').classList.remove('open')">✕ Close</button>
+  <h3>Part VI · Navigation</h3>
+  <a href="#prefatory">Prefatory Note प्रस्तावना</a>
+  <a href="#s1" class="sub">Nāmas 575–600 · Intoxicated Goddess · Dakṣa Series</a>
+  <a href="#s2" class="sub">Nāmas 601–630 · Guru · Compassion · Tripurā</a>
+  <a href="#s3" class="sub">Nāmas 631–660 · Gaurī · Knowledge · Will</a>
+  <a href="#s4" class="sub">Nāmas 661–700 · Duality Beyond · Earth · Sovereignty</a>
+  <a href="#s5" class="sub">Nāmas 701–730 · Omnipresence · Yoga · Mantra</a>
+  <a href="#s6" class="sub">Nāmas 731–766 · Liberation · Consciousness · Empire</a>
+  <a href="#adhyaya20">Adhyāya 20 · Deities of the Kiricakra</a>
+  <a href="#adhyaya21">Adhyāya 21 · Boasting of Bhaṇḍāsura</a>
+  <a href="#adhyaya22">Adhyāya 22 · Durmada and Kuraṇḍa Slain</a>
+  <a href="#adhyaya23">Adhyāya 23 · Five Asura Generals Slain</a>
+  <a href="#adhyaya24">Adhyāya 24 · Seven Generals Killed</a>
+  <a href="#adhyaya25">Adhyāya 25 · Flight of Viṣaṅga</a>
+  <a href="#adhyaya26">Adhyāya 26 · Sons of Bhaṇḍāsura Slain</a>
+  <a href="#adhyaya27">Adhyāya 27 · Exploits of Gaṇanātha</a>
+  <a href="#adhyaya28">Adhyāya 28 · Viśukra and Viṣaṅga Slain</a>
+  <a href="#sonic-analysis">Sonic Analysis नाद-मेल-स्वर</a>
+  <a href="#colophon">Colophon उपसंहारः</a>
+</nav>
+
+<main>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="seed-mantra">ॐ ललिता ध्यान</div>
+  <div class="part-label">Brahmāṇḍa Purāṇa · Uttarabhāga · Adhyāya 20–28</div>
+  <div class="devanagari-title">ललितोपाख्यान — षष्ठ भाग</div>
+  <h1>Lalitopākhyāna — Part Six</h1>
+  <p class="subtitle">
+    Nāmas 575–766 · The Intoxicated Goddess · Dakṣa Series · Guru Forms ·
+    Tripurā · Gaurī · The Three Śaktis of Will Knowledge and Action ·
+    Yoga Epithets · Liberation and Consciousness Forms ·
+    The Kiricakra Chariot · The Great Battle Narratives · Bhaṇḍāsura's Sons
+  </p>
+  <p class="subtitle" style="font-size:.92rem;">After Bhāskararāya Makhin · Śaṅkarācārya · The Brahmāṇḍa Purāṇa</p>
+  <div class="edition-line">Scholarly Edition · Session VI · 35 Pages</div>
+  <div class="breadcrumb">
+    <a href="https://lalithatwo.culturalmusings.com/">Lalitā Home</a> ›
+    <a href="https://lalithafour.culturalmusings.com/">Part IV</a> ›
+    <a href="https://lalithafive.culturalmusings.com/">Part V</a> ›
+    <strong>Part VI · Nāmas 575–766 · Adhyāya 20–28</strong>
+  </div>
+</header>
+
+<!-- PREFATORY NOTE -->
+<section id="prefatory" class="section-block">
+  <div class="page-marker">Page 1</div>
+  <div class="section-header">
+    <div class="section-number">Prefatory Note · Session VI</div>
+    <div class="section-title-dev">षष्ठभागस्य प्रारम्भः</div>
+    <div class="section-title-eng">Opening of the Sixth Session</div>
+  </div>
+  <p class="intro-prose">
+    Part VI opens at nāma 575 — <span class="highlight-roman">Mādhvīpānālasā</span> — and carries the Lalitā Sahasranāma commentary through nāma 766, <span class="highlight-roman">Japāpuṣpa-nibhākṛtiḥ</span>. This session spans some of the most devotionally intimate passages of the entire Sahasranāma: the portrait of the Goddess languid and luminous from drinking divine wine; the complete Dakṣa-series establishing her identity as Satīdevī; the guru-sequence; the threefold Tripurā epithets; the great Sovereignty cluster of nāmas 682–700; and the Yoga-sequence establishing her as the ground of all yogic attainment.
+  </p>
+  <p class="intro-prose">
+    The Purāṇic narrative of Adhyāyas 20–28 of the Brahmāṇḍa Purāṇa's Uttarabhāga provides the battlefield context: the deities of the Kiricakra chariot of Daṇḍanāthā; the boastful speech of Bhaṇḍāsura; the slaying of Durmada, Kuraṇḍa, the five generals (Karaṅka's group), and the seven sons of Kīkasā; the night attack of Viṣaṅga and its repulsion by the Nityā deities; the slaying of Bhaṇḍāsura's thirty sons by the virgin goddess Bālā; and the elephant-headed Gaṇeśa's destruction of the Jayavighna yantra — events that set the stage for the great final battle with Bhaṇḍāsura himself.
+  </p>
+  <blockquote>
+    <p>"The three Śaktis — Icchā, Jñāna, Kriyā — are the three constitutive powers of the Goddess without which nothing can exist. Icchā is the will toward being; Jñāna is the self-knowledge of being; Kriyā is the actualisation of being. The universe is not a product of one or two of these — it requires all three in their perfect simultaneity. The Goddess as <em>Icchāśakti-jñānaśakti-kriyāśakti-svarūpiṇī</em> is the complete living proof."</p>
+    <cite>— Bhāskararāya Makhin, Saubhāgyabhāskara, commentary to nāma 658</cite>
+  </blockquote>
+</section>
+
+<!-- SECTION I — NĀMAS 575–600 -->
+<div class="page-marker">Page 2</div>
+<section id="s1" class="section-block">
+  <div class="section-header">
+    <div class="section-number">Section I · Nāmas 575–600</div>
+    <div class="section-title-dev">माध्वीपानालसा — दक्षयज्ञविनाशिनी</div>
+    <div class="section-title-eng">The Intoxicated Goddess · Alphabet Forms · Great Kailāsa · Dakṣa Series</div>
+    <div class="section-subtitle">Divine Wine · Mātṛkā Varṇas · Softness of Lotus · The Adorable · Compassion</div>
+  </div>
+
+  <p class="intro-prose">
+    Nāmas 575–580 open this session with one of the most sensuously intimate portraits in the Sahasranāma — the Goddess in a state of divine languor after drinking sacred wine, her arms soft as lotus stems, her face radiant. The sequence then pivots to the metaphysical register with the Mātṛkā nāma (577), before ascending through the great celestial geography of Kailāsa (578) and the epithet of adorability (580). Nāmas 581–600 introduce the compassion-sovereignty cluster and the famous Dakṣa-series.
+  </p>
+
+  <div class="nama-entry" id="n575">
+    <div class="nama-number">Nāma 575</div>
+    <div class="nama-dev">माध्वीपानालसा</div>
+    <div class="nama-roman">Mādhvī-pāna-ālasā</div>
+    <div class="nama-meaning">She who is languid from drinking divine wine; She who is not eager for anything on account of the bliss of her own nature. <em>Mādhvī</em> = honey-wine, divine mead. <em>Pāna</em> = drinking. <em>Ālasā</em> = languid, slow with contentment. This is not the intoxication of worldly alcohol but the <em>divya-mada</em> — the inner rapture of absolute self-sufficiency. The Goddess desires nothing because she already is everything; her "languor" is the supreme ease of the fully realised.</div>
+    <div class="nama-tags"><span class="tag">Divine Rapture</span><span class="tag">Ānanda</span><span class="tag">Ālasā</span></div>
+  </div>
+
+  <div class="nama-entry" id="n576">
+    <div class="nama-number">Nāma 576</div>
+    <div class="nama-dev">मत्ता</div>
+    <div class="nama-roman">Mattā</div>
+    <div class="nama-meaning">She who is intoxicated with divine bliss. <em>Mattā</em> carries the double sense of intoxicated and of one who is filled to overflowing — the Goddess whose inner fullness cannot be contained. Bhāskararāya correlates <em>Mattā</em> specifically with the Kuṇḍalinī Śakti risen to the Sahasrāra and there dissolving into the ocean of consciousness — the ultimate intoxication that ends all seeking.</div>
+    <div class="nama-tags"><span class="tag">Kuṇḍalinī</span><span class="tag">Sahasrāra</span><span class="tag">Bliss</span></div>
+  </div>
+
+  <div class="nama-entry" id="n577">
+    <div class="nama-number">Nāma 577</div>
+    <div class="nama-dev">मातृकावर्णरूपिणी</div>
+    <div class="nama-roman">Mātṛkā-varṇa-rūpiṇī</div>
+    <div class="nama-meaning">She who is in the form of the letters of the Sanskrit alphabet. The fifty Mātṛkā letters — from <em>a</em> to <em>kṣa</em> — are the Goddess's sonic body. Every phoneme of Sanskrit is a cell in her body of sound. The Śāradā-tilaka teaches that the entire universe is constituted by these letters as its sonic DNA — and the Goddess IS those letters in their totality. This is why Sanskrit is called <em>deva-bhāṣā</em>: not because the gods speak it but because it is the body of the Goddess.</div>
+    <div class="nama-tags"><span class="tag">Mātṛkā Śakti</span><span class="tag">Alphabet</span><span class="tag">Sonic Body</span></div>
+  </div>
+
+  <table class="nama-table">
+    <tr>
+      <td class="num">578</td>
+      <td class="dev">महाकैलासनिलया</td>
+      <td class="meaning"><em>Mahā-kailāsa-nilayā</em> — She who resides in the great Kailāsa. The Goddess's primary cosmic residence is not the earthly Kailāsa mountain in Tibet but the <em>Mahā-kailāsa</em> — the transcendent Kailāsa beyond all spatial location, the celestial summit of consciousness itself. The Lalitopākhyāna describes Śrīpura as the ultimate Kailāsa.</td>
+    </tr>
+    <tr>
+      <td class="num">579</td>
+      <td class="dev">मृणालमृदुदोर्लता</td>
+      <td class="meaning"><em>Mṛṇāla-mṛdu-dorlātā</em> — She whose arms are as tender and cool as the stem of a lotus. The lotus stem (<em>mṛṇāla</em>) — pale white, fibrous, cool, pliable — is the classical Indian image of the most delicate feminine beauty. This nāma presents the Goddess in her most tenderly intimate, physically present aspect.</td>
+    </tr>
+    <tr>
+      <td class="num">580</td>
+      <td class="dev">महनीया</td>
+      <td class="meaning"><em>Mahanīyā</em> — She who is worthy of being adored, reverenced, and worshipped by all. <em>Mahana</em> = the act of worshipping the highest. She is not merely the object of worship but the very standard of worthiness — to understand what deserves adoration is already to understand the Goddess.</td>
+    </tr>
+    <tr>
+      <td class="num">581</td>
+      <td class="dev">दयामूर्तिः</td>
+      <td class="meaning"><em>Dayā-mūrtiḥ</em> — She who is the very personification of compassion. Not one who feels compassion but one who IS compassion in its embodied form. The Goddess's entire existence is an act of compassion — the willingness of the absolute to appear as the relative, of the infinite to appear as the finite, so that her children may find their way home.</td>
+    </tr>
+    <tr>
+      <td class="num">582</td>
+      <td class="dev">महासाम्राज्यशालिनी</td>
+      <td class="meaning"><em>Mahā-sāmrājya-śālinī</em> — She who possesses and controls the great empire of the three worlds. Her empire is not imposed by force but constituted by the fact of her being the ground of all existence. All kings are subjects; all worlds are provinces; all ages are moments in her imperial time.</td>
+    </tr>
+  </table>
+
+  <div class="ornament-line"><span>❧</span></div>
+  <div class="page-marker">Page 3</div>
+
+  <p class="intro-prose">
+    Nāmas 583–590 form a concentrated knowledge-sequence, moving from self-knowledge through sacred mantra to cosmic sovereignty — followed by the extraordinary nāma 590, the longest compound in the Sahasranāma's first half.
+  </p>
+
+  <div class="nama-entry" id="n583">
+    <div class="nama-number">Nāma 583</div>
+    <div class="nama-dev">आत्मविद्या</div>
+    <div class="nama-roman">Ātma-vidyā</div>
+    <div class="nama-meaning">She who is the knowledge of the self. <em>Ātma-vidyā</em> — the supreme science of self-inquiry as taught in the Upaniṣads. The Goddess does not merely teach this knowledge; she IS this knowledge. To know the self is to know her; to know her is to know the self. The path and the destination are the same being.</div>
+    <div class="nama-tags"><span class="tag">Self-Knowledge</span><span class="tag">Vedānta</span><span class="tag">Ātman</span></div>
+  </div>
+
+  <table class="nama-table">
+    <tr>
+      <td class="num">584</td>
+      <td class="dev">महाविद्या</td>
+      <td class="meaning"><em>Mahā-vidyā</em> — She who is the great knowledge, the exalted seat of the knowledge of the self. Among all sciences and systems of knowledge, Ātma-vidyā is the supreme; and Ātma-vidyā in its fullest form is Mahā-vidyā. The ten Mahāvidyās of the Tantric tradition — from Kālī to Kamalā — are her ten aspects.</td>
+    </tr>
+    <tr>
+      <td class="num">585</td>
+      <td class="dev">श्रीविद्या</td>
+      <td class="meaning"><em>Śrī-vidyā</em> — She who is sacred knowledge; specifically, the Pañcadaśī mantra. The Śrī Vidyā — the fifteen-syllabled mantra of Lalitā Tripurasundarī — is not merely an expression about the Goddess but the Goddess herself in her sonic form. This nāma is the Sahasranāma's explicit self-identification with its own central practice.</td>
+    </tr>
+    <tr>
+      <td class="num">586</td>
+      <td class="dev">कामसेविता</td>
+      <td class="meaning"><em>Kāma-sevitā</em> — She who is worshipped by Kāmadeva. Even the god of love — the most powerful force in the universe of desire — performs her worship. She is the source of all beauty and therefore the ultimate object of all desire, including the desire of the god of desire himself.</td>
+    </tr>
+    <tr>
+      <td class="num">587</td>
+      <td class="dev">श्रीषोडशाक्षरीविद्या</td>
+      <td class="meaning"><em>Śrī-ṣoḍaśākṣarī-vidyā</em> — She who is in the form of the sixteen-syllabled mantra. The Ṣoḍaśī mantra adds one syllable to the Pañcadaśī, completing the sixteen-count that corresponds to the full moon. This is the most secret and powerful form of the Śrī Vidyā mantra, transmitted only in direct initiation.</td>
+    </tr>
+    <tr>
+      <td class="num">588</td>
+      <td class="dev">त्रिकूटा</td>
+      <td class="meaning"><em>Trikūṭā</em> — She who is in the three parts of the Pañcadaśī mantra. The fifteen-syllable mantra divides into three kūṭas (parts): Vāgbhava-kūṭa (five syllables), Kāmarāja-kūṭa (six syllables), and Śakti-kūṭa (four syllables) — corresponding to the three tiers of the Śrī Cakra and to fire, sun, and moon respectively.</td>
+    </tr>
+    <tr>
+      <td class="num">589</td>
+      <td class="dev">कामकोटिका</td>
+      <td class="meaning"><em>Kāma-koṭikā</em> — She of whom Kāma (here Śiva) is a part or an approximate form. Koṭi = crore, but also angle or fraction. The entire being of Śiva is a partial expression of the Goddess's infinite nature — a teaching of absolute Śākta supremacy.</td>
+    </tr>
+  </table>
+
+  <div class="nama-entry" id="n590">
+    <div class="nama-number">Nāma 590</div>
+    <div class="nama-dev">कटाक्षकिङ्करीभूतकमलाकोटिसेविता</div>
+    <div class="nama-roman">Kaṭākṣa-kiṅkarī-bhūta-kamalā-koṭi-sevitā</div>
+    <div class="nama-meaning">She who is attended by millions of Lakṣmīs who are subdued by her mere glances. The compound describes a staggering cosmic scene: the Goddess casts a casual sideways glance (<em>kaṭākṣa</em>) — and millions of manifestations of Lakṣmī, each herself a sovereign deity of all prosperity, become her servants (<em>kiṅkarī</em>). That which is the goal of all human aspiration — wealth, beauty, fortune personified — is merely a handmaid of the Goddess. This nāma is among the most frequently cited in the tradition as evidence of Lalitā's absolute supremacy.</div>
+    <div class="nama-tags"><span class="tag">Absolute Sovereignty</span><span class="tag">Lakṣmī</span><span class="tag">Kaṭākṣa</span></div>
+  </div>
+
+  <div class="page-marker">Page 4</div>
+
+  <table class="nama-table">
+    <tr>
+      <td class="num">591</td>
+      <td class="dev">शिरःस्थिता</td>
+      <td class="meaning"><em>Śiraḥ-sthitā</em> — She who resides in the head. The Goddess's presence at the crown of the head connects to the Sahasrāra cakra and to the tradition of Śrī Vidyā in which the ascent of the Kuṇḍalinī culminates at the crown in union with Śiva.</td>
+    </tr>
+    <tr>
+      <td class="num">592</td>
+      <td class="dev">चन्द्रनिभा</td>
+      <td class="meaning"><em>Candra-nibhā</em> — She who is resplendent like the moon. The cool, full-moon radiance of the Goddess's face — neither the harsh heat of the sun nor the total absence of light, but the perfect luminosity of a full moon that illumines without burning.</td>
+    </tr>
+    <tr>
+      <td class="num">593</td>
+      <td class="dev">भालस्था</td>
+      <td class="meaning"><em>Bhāla-sthā</em> — She who resides in the forehead, between the eyebrows, at the Ājñā cakra. Her residence at the third-eye centre establishes her as the inner guru whose command (<em>ājñā</em>) the practitioner follows in all spiritual decisions.</td>
+    </tr>
+    <tr>
+      <td class="num">594</td>
+      <td class="dev">इन्द्रधनुःप्रभा</td>
+      <td class="meaning"><em>Indra-dhanuḥ-prabhā</em> — She who is resplendent like the rainbow. The Goddess's radiance, like a rainbow, encompasses the full spectrum of light — all colours simultaneously, each distinct and yet inseparable from the white light that is their source. A beautiful image of her encompassing all diversity without losing her unity.</td>
+    </tr>
+    <tr>
+      <td class="num">595</td>
+      <td class="dev">हृदयस्था</td>
+      <td class="meaning"><em>Hṛdaya-sthā</em> — She who resides in the heart. The Anāhata cakra is her primary interior residence in the yogic body. The heart is the meeting point of above and below, of the divine and the human, of Śiva and Śakti. Her presence here is why all sincere longing is a form of prayer.</td>
+    </tr>
+    <tr>
+      <td class="num">596</td>
+      <td class="dev">रविप्रख्या</td>
+      <td class="meaning"><em>Ravi-prakhyā</em> — She who shines with the special brilliance of the sun. The solar brilliance of the Goddess at the heart centre — the warm, life-giving illumination that sustains all inner growth. This contrasts beautifully with nāma 592's lunar coolness: she encompasses both solar and lunar qualities.</td>
+    </tr>
+    <tr>
+      <td class="num">597</td>
+      <td class="dev">त्रिकोणान्तरदीपिका</td>
+      <td class="meaning"><em>Trikoṇāntara-dīpikā</em> — She who shines as a light within the triangle. The innermost triangle of the Śrī Cakra — the <em>sarva-siddhi-prada</em> triangle at the bindu — is her home. She is not merely present there but is herself the light that illuminates that innermost space. The devotee who reaches the innermost triangle in meditation finds not darkness but the living light of the Goddess.</td>
+    </tr>
+  </table>
+
+  <div class="ornament-line"><span>❧</span></div>
+
+  <p class="intro-prose">
+    Nāmas 598–600 constitute the celebrated Dakṣa-series — establishing the Goddess as Satī, the first daughter of Dakṣa Prajāpati, destroyer of the sacrifice of Dakṣa, and slayer of demons. These three nāmas link the Sahasranāma to the great Purāṇic narrative of Śiva's grief over Satī's self-immolation.
+  </p>
+
+  <div class="nama-entry" id="n598">
+    <div class="nama-number">Nāma 598</div>
+    <div class="nama-dev">दाक्षायणी</div>
+    <div class="nama-roman">Dākṣāyaṇī</div>
+    <div class="nama-meaning">She who is Satīdevī, the daughter of Dakṣa Prajāpati. This nāma situates the supreme Goddess within the great Purāṇic narrative: she who in an earlier cosmic cycle incarnated as Satī, daughter of Dakṣa, married Śiva against her father's wishes, and ultimately gave up her life rather than tolerate her father's insult to her husband. Her self-immolation is the mythological origin of the Śākta Pīṭhas — wherever her dismembered body fell to earth, a sacred seat of the Goddess arose.</div>
+    <div class="nama-tags"><span class="tag">Satī</span><span class="tag">Dakṣa</span><span class="tag">Śākta Pīṭhas</span></div>
+  </div>
+
+  <table class="nama-table">
+    <tr>
+      <td class="num">599</td>
+      <td class="dev">दैत्यहन्त्री</td>
+      <td class="meaning"><em>Daitya-hantrī</em> — She who is the killer of demons. The Goddess's warrior function — expressed most fully in the Devī Māhātmya's accounts of the slaying of Mahiṣa, Śumbha, and Niśumbha — is compressed into this single epithet. All the elaborate battle narratives of Adhyāyas 20–29 of the Lalitopākhyāna are the mythological elaboration of this one word.</td>
+    </tr>
+    <tr>
+      <td class="num">600</td>
+      <td class="dev">दक्षयज्ञविनाशिनी</td>
+      <td class="meaning"><em>Dakṣa-yajña-vināśinī</em> — She who destroyed the sacrifice performed by Dakṣa. When Dakṣa excluded Śiva from his great sacrifice and insulted him, Satī entered the sacrificial fire. Vīrabhadra — Śiva's warrior manifestation — then destroyed the sacrifice and Dakṣa. The Goddess's destruction of this sacrifice is the mythological precedent for the principle that no ritual, however elaborate, is valid if it excludes the devotion of the heart.</td>
+    </tr>
+  </table>
+</section>
+
+<!-- SECTION II — NĀMAS 601–630 -->
+<div class="page-marker">Page 5</div>
+<section id="s2" class="section-block">
+  <div class="section-header">
+    <div class="section-number">Section II · Nāmas 601–630</div>
+    <div class="section-title-dev">दरान्दोलितदीर्घाक्षी — त्र्यक्षरी</div>
+    <div class="section-title-eng">Tremulous Eyes · Guru Forms · Treasure of Qualities · Tripurā Series</div>
+    <div class="section-subtitle">The Smiling Face · Guru Form · Cowherd Mother · Mother of Skanda · Protector of Gods</div>
+  </div>
+
+  <table class="nama-table">
+    <tr>
+      <td class="num">601</td>
+      <td class="dev">दरान्दोलितदीर्घाक्षी</td>
+      <td class="meaning"><em>Darāndolita-dīrghākṣī</em> — She who has long, tremulous eyes. <em>Darāndolita</em> = slightly moving, trembling. The Goddess's large, beautiful eyes are in a state of gentle movement — not restless but subtly alive, like the surface of deep water touched by a breath of wind. An image of immense visual intimacy.</td>
+    </tr>
+    <tr>
+      <td class="num">602</td>
+      <td class="dev">दरहासोज्ज्वलन्मुखी</td>
+      <td class="meaning"><em>Dara-hāsa-ujjvalan-mukhī</em> — She whose face is radiant with a smile. <em>Dara-hāsa</em> = a slight, gentle smile — not a full laugh but the subtle upturn of the lips that transforms a face. The Goddess's perpetual gentle smile is the visible sign of the bliss of full self-realisation. To see this smile in meditation is considered the highest vision.</td>
+    </tr>
+    <tr>
+      <td class="num">603</td>
+      <td class="dev">गुरुमूर्तिः</td>
+      <td class="meaning"><em>Guru-mūrtiḥ</em> — She who has assumed a severe, weighty form; She who is in the form of the Guru. The double meaning is important: <em>guru</em> = heavy (one interpretation); <em>guru</em> = the preceptor who transmits liberation. As the Guru par excellence, the Goddess is the source of all initiatory lineages — every human teacher receives their teaching ultimately from her.</td>
+    </tr>
+    <tr>
+      <td class="num">604</td>
+      <td class="dev">गुणनिधिः</td>
+      <td class="meaning"><em>Guṇa-nidhiḥ</em> — She who is the treasure house of all good qualities. Every virtue, every excellence, every beautiful quality that exists anywhere in any being is a partial reflection of the inexhaustible treasury of qualities that is the Goddess. Human goodness is her donation.</td>
+    </tr>
+    <tr>
+      <td class="num">605</td>
+      <td class="dev">गोमाता</td>
+      <td class="meaning"><em>Go-mātā</em> — She who became the Surabhi cow that grants all wishes. <em>Surabhi</em> (also <em>Kāmadhenu</em>) is the wish-fulfilling cow of paradise — the mother of all cattle, the embodiment of abundance and nourishment. The Goddess as Gomātā is the principle of inexhaustible giving: she never runs dry.</td>
+    </tr>
+    <tr>
+      <td class="num">606</td>
+      <td class="dev">गुहजन्मभूः</td>
+      <td class="meaning"><em>Guha-janma-bhūḥ</em> — She who is the mother of Guha (Subrahmaṇya / Skanda). Guha = "the hidden one" — Skanda, the son of Śiva and Pārvatī, is called Guha because he was born in a hidden, secluded place. The Goddess as his mother connects to the great battle narrative: Skanda was born precisely to defeat Tārakāsura, the demon who was the companion and ally of Bhaṇḍāsura.</td>
+    </tr>
+    <tr>
+      <td class="num">607</td>
+      <td class="dev">देवेशी</td>
+      <td class="meaning"><em>Deveśī</em> — She who is the protector and ruler of the gods. The Devas are not merely her worshippers — she is their sovereign protector. The entire narrative of the battle against Bhaṇḍāsura is the mythological expression of her role as Deveśī: the gods, having failed, turn to the Goddess, and she fights on their behalf.</td>
+    </tr>
+    <tr>
+      <td class="num">608</td>
+      <td class="dev">दण्डनीतिस्था</td>
+      <td class="meaning"><em>Daṇḍa-nīti-sthā</em> — She who maintains the rules of justice without the slightest error. <em>Daṇḍa-nīti</em> = the science of governance and punishment. The Goddess is the ultimate sovereign who administers the law of karma — reward for righteous action, correction for unrighteous — with perfect impartiality.</td>
+    </tr>
+    <tr>
+      <td class="num">609</td>
+      <td class="dev">दहराकाशरूपिणी</td>
+      <td class="meaning"><em>Daharākāśa-rūpiṇī</em> — She who is the subtle self in the heart; She who is in the form of the tiny space within the heart. The <em>dahara-ākāśa</em> is the famous "tiny space within the heart" of the Chāndogya Upaniṣad (8.1.1) — within which the entire universe exists. The Goddess as this space within the heart is the Upaniṣadic teaching that the infinite is concealed in the most intimate: <em>aṇor aṇīyān mahato mahīyān</em>.</td>
+    </tr>
+  </table>
+
+  <div class="page-marker">Page 6</div>
+
+  <div class="nama-entry" id="n610">
+    <div class="nama-number">Nāma 610</div>
+    <div class="nama-dev">प्रतिपन्मुख्यराकान्ततिथिमण्डलपूजिता</div>
+    <div class="nama-roman">Pratipan-mukhya-rākānta-tithi-maṇḍala-pūjitā</div>
+    <div class="nama-meaning">She who is worshipped on every lunar day, beginning with Pratipad (the first day of the lunar fortnight) and ending with the full moon (Rākā). Each of the fifteen lunar days is governed by one of the fifteen Nityā deities, each of whom is an aspect of the Goddess. Daily worship of the Goddess thus covers the entire lunar cycle — and the Goddess as the sixteenth Nityā encompasses all fifteen days within her completeness. This nāma establishes the daily ritual calendar of Śrī Vidyā devotion.</div>
+    <div class="nama-tags"><span class="tag">Lunar Calendar</span><span class="tag">Nityā Pūjā</span><span class="tag">Ritual</span></div>
+  </div>
+
+  <table class="nama-table">
+    <tr>
+      <td class="num">611</td>
+      <td class="dev">कलात्मिका</td>
+      <td class="meaning"><em>Kalātmikā</em> — She who is in the form of the <em>kalās</em>. The sixty-four arts (<em>kalās</em>), the sixty-four Tantric arts, and the sixteen digits of the moon are all forms of the Goddess. Every form of creative skill and artistic excellence is a <em>kalā</em> — and all <em>kalās</em> together constitute her body.</td>
+    </tr>
+    <tr>
+      <td class="num">612</td>
+      <td class="dev">कलानाथा</td>
+      <td class="meaning"><em>Kalā-nāthā</em> — She who is the mistress and sovereign of all the <em>kalās</em>. As <em>kalātmikā</em> she IS the arts; as <em>kalānāthā</em> she governs them. The distinction mirrors that of Prakṛti (constitutive) and Puruṣa (governing) — she is both simultaneously.</td>
+    </tr>
+    <tr>
+      <td class="num">613</td>
+      <td class="dev">काव्यालापविनोदिनी</td>
+      <td class="meaning"><em>Kāvya-ālāpa-vinodinī</em> — She who delights in hearing poetry and conversations in poetry. The Goddess is not merely the source of all creativity; she is an avid audience. The Lalitopākhyāna's description of Śrīpura regularly includes the daughters of Mātaṅga singing and conversing in verse. The divine court is a court of perpetual poetry.</td>
+    </tr>
+    <tr>
+      <td class="num">614</td>
+      <td class="dev">सचामररमावाणीसव्यदक्षिणसेविता</td>
+      <td class="meaning"><em>Sa-cāmara-ramā-vāṇī-savya-dakṣiṇa-sevitā</em> — She who is attended on the left by Lakṣmī and on the right by Sarasvatī, each bearing ceremonial fans (cāmaras). The image of the Goddess flanked by the goddesses of Wealth and Knowledge captures the complete scope of her blessing: whatever human beings most deeply need — the prosperity that sustains life and the wisdom that liberates it — are both in her service.</td>
+    </tr>
+  </table>
+
+  <div class="page-marker">Page 7</div>
+
+  <div class="phil-box">
+    <div class="phil-box-title">The Tripurā Series · Nāmas 626–630</div>
+    <p>Nāmas 626–630 constitute the celebrated Tripurā-series — five consecutive epithets establishing the Goddess as the supreme reality that encompasses and transcends the Vedic trinity. <span class="highlight-roman">Tripurā</span> (626) names her as older than and superior to the three — Brahmā, Viṣṇu, Śiva. <span class="highlight-roman">Trijagad-vandyā</span> (627) establishes that all three worlds adore her. <span class="highlight-roman">Trimūrtiḥ</span> (628) makes the stunning claim that she IS the aggregate of the trinity — Brahmā, Viṣṇu, and Śiva together constitute her single form. <span class="highlight-roman">Tridaśeśvarī</span> (629) names her as the ruler of all thirty-three classes of Devas. <span class="highlight-roman">Tryakṣarī</span> (630) identifies her with the three letters <em>a-u-m</em> that constitute the syllable Oṃ — the sonic form of the entire cosmos.</p>
+  </div>
+
+  <table class="nama-table">
+    <tr>
+      <td class="num">615</td>
+      <td class="dev">आदिशक्तिः</td>
+      <td class="meaning"><em>Ādi-śaktiḥ</em> — She who is the primordial power, the Parāśakti who is the cause of the universe. <em>Ādi</em> = first, primordial, without prior cause. Among all Śaktis the Goddess is the first and the ground of all the rest. The Devī Sūkta of the Ṛgveda proclaims: <em>ahaṃ rāṣṭrī...</em> — "I am the sovereign."</td>
+    </tr>
+    <tr>
+      <td class="num">616</td>
+      <td class="dev">अमेया</td>
+      <td class="meaning"><em>Ameyā</em> — She who is not measurable by any means. No instrument of knowledge — perception, inference, analogy, scripture — can encompass her. She contains all means of measurement within herself and therefore transcends all of them.</td>
+    </tr>
+    <tr>
+      <td class="num">617</td>
+      <td class="dev">आत्मा</td>
+      <td class="meaning"><em>Ātmā</em> — She who is the Self in all beings. This is the Śākta resolution of the central Vedāntic question: the Ātman that the Upaniṣads tell us to know is not a neuter abstraction but the living Goddess herself.</td>
+    </tr>
+    <tr>
+      <td class="num">618–620</td>
+      <td class="dev">परमा · पावनाकृतिः · अनेककोटिब्रह्माण्डजननी</td>
+      <td class="meaning"><em>Paramā</em> — She who is the supreme. <em>Pāvanākṛtiḥ</em> — She of sacred, purifying form. <em>Aneka-koṭi-brahmāṇḍa-jananī</em> — She who is the creator of many crores of universes. Not one universe but an uncountable multitude — each containing its own Brahmā, Viṣṇu, and Śiva — all emerge from and return to the Goddess in her play of cosmic creation.</td>
+    </tr>
+    <tr>
+      <td class="num">621</td>
+      <td class="dev">दिव्यविग्रहा</td>
+      <td class="meaning"><em>Divya-vigrahā</em> — She who has a divine, transcendent body. Her body is not of flesh and bone but of pure light — the <em>cinmayī-vigraha</em> described in the Saundaryalaharī: a body that is itself consciousness made visible.</td>
+    </tr>
+    <tr>
+      <td class="num">622</td>
+      <td class="dev">क्लीङ्कारी</td>
+      <td class="meaning"><em>Klīṃ-kārī</em> — She who is creator of the bīja-mantra syllable 'Klīṃ.' The Kāma-bīja Klīṃ is the seed-mantra of love, attraction, and creative fulfilment — the sonic essence of the power of love that draws all things toward union with the divine. The Goddess creates this bīja as the sonic instrument of her Kāma-śakti.</td>
+    </tr>
+    <tr>
+      <td class="num">623</td>
+      <td class="dev">केवला</td>
+      <td class="meaning"><em>Kevalā</em> — She who is the absolute, complete in herself, independent, without attributes. <em>Kevala</em> = alone, pure, without admixture. This is the Kashmir Śaivite technical term for the state of pure consciousness without any object — the Goddess in her most transcendent, attribute-free state.</td>
+    </tr>
+    <tr>
+      <td class="num">624</td>
+      <td class="dev">गुह्या</td>
+      <td class="meaning"><em>Guhyā</em> — She who is secret; She who is to be known only in the innermost cave of the heart. Her ultimate nature cannot be disclosed through words — only the prepared heart in the silence of meditation can know her. The secrecy is not a withholding but a quality of the thing itself: the Absolute cannot be made an object of description.</td>
+    </tr>
+    <tr>
+      <td class="num">625</td>
+      <td class="dev">कैवल्यपददायिनी</td>
+      <td class="meaning"><em>Kaivalya-pada-dāyinī</em> — She who bestows the state of liberation, of pure aloneness in the Absolute. <em>Kaivalya</em> = the Sāṃkhya and Yoga term for liberation — the state in which the Puruṣa rests in its own nature, free from all entanglement with Prakṛti. In the Śākta context: the state in which consciousness rests fully in the Goddess and has dissolved all sense of separation.</td>
+    </tr>
+    <tr>
+      <td class="num">626–630</td>
+      <td class="dev">त्रिपुरा · त्रिजगद्वन्द्या · त्रिमूर्तिः · त्रिदशेश्वरी · त्र्यक्षरी</td>
+      <td class="meaning">The complete Tripurā-series: She who is older than the three (Brahmā, Viṣṇu, Śiva); She adored by all three worlds; She who is the aggregate of the trinity; She who is the ruler of all the gods (thirty-three classes); She whose form consists of three letters (Oṃ = a-u-m). Together these five nāmas establish the Goddess's absolute primacy over the entire Vedic cosmic order.</td>
+    </tr>
+  </table>
+</section>
+
+<!-- SECTION III — NĀMAS 631–660 -->
+<div class="page-marker">Page 9</div>
+<section id="s3" class="section-block">
+  <div class="section-header">
+    <div class="section-number">Section III · Nāmas 631–660</div>
+    <div class="section-title-dev">दिव्यगन्धाढ्या — सर्वाधारा</div>
+    <div class="section-title-eng">Divine Fragrance · Gaurī · Vedānta · Yoga of Knowledge · Cosmic Support</div>
+    <div class="section-subtitle">Sindhūra Mark · Pārvatī · Knowledge Forms · Truth-Bliss · All-Supporting Ground</div>
+  </div>
+
+  <table class="nama-table">
+    <tr>
+      <td class="num">631</td>
+      <td class="dev">दिव्यगन्धाढ्या</td>
+      <td class="meaning"><em>Divya-gandhāḍhyā</em> — She who is richly endowed with divine fragrance. The Goddess's body carries a fragrance beyond any earthly perfume — the fragrance of pure consciousness, of absolute being. The Tantrāloka describes this as the <em>svarasa</em> — the Goddess's own juice or essence that permeates the universe.</td>
+    </tr>
+    <tr>
+      <td class="num">632</td>
+      <td class="dev">सिन्दूरतिलकाञ्चिता</td>
+      <td class="meaning"><em>Sindūra-tilakāñcitā</em> — She who shines with a vermillion mark on her forehead. The red sindūra tilaka on the forehead of a married woman is one of India's most ancient and potent symbols of auspiciousness, fertility, and the power of conjugal love. On the Goddess it marks her as the eternal consort of Kāmeśvara and as the supreme source of all auspiciousness.</td>
+    </tr>
+    <tr>
+      <td class="num">633</td>
+      <td class="dev">उमा</td>
+      <td class="meaning"><em>Umā</em> — She who is Pārvatī. The name Umā has multiple etymologies: "O, do not [practise austerities]!" — what her mother said when the young Pārvatī began her penances; or derived from <em>Uma</em> meaning light, radiance. As Umā, the Goddess is the beloved daughter of the Himālaya who won Śiva through the power of her devotion.</td>
+    </tr>
+    <tr>
+      <td class="num">634</td>
+      <td class="dev">शैलेन्द्रतनया</td>
+      <td class="meaning"><em>Śailendra-tanayā</em> — She who is the daughter of the king of mountains, Himavat. The birth of the Goddess into the Himalayan royal family — as Pārvatī, the daughter of Himavat — is the mythological narrative of the divine descending into the specific, the historical, the familial. The infinite has parents.</td>
+    </tr>
+    <tr>
+      <td class="num">635</td>
+      <td class="dev">गौरी</td>
+      <td class="meaning"><em>Gaurī</em> — She who has a fair, radiant complexion. Gaurī is both the name of the Goddess in her most beautiful, benevolent aspect, and a description of her luminous golden-fair skin. The contrast between Gaurī (the golden-white) and Kālī (the pitch-black) represents the two complementary poles of the Goddess's nature: grace and power, beauty and terror, creation and dissolution.</td>
+    </tr>
+    <tr>
+      <td class="num">636</td>
+      <td class="dev">गन्धर्वसेविता</td>
+      <td class="meaning"><em>Gandharva-sevitā</em> — She who is served by Gandharvas such as Viśvāvasu. The Gandharvas — the celestial musicians and demi-gods of the intermediate realm — serve the Goddess as her musicians and attendants. Viśvāvasu is their chief; his presence in the Goddess's retinue connects the Sahasranāma's musical theology to the Purāṇic narrative.</td>
+    </tr>
+    <tr>
+      <td class="num">637</td>
+      <td class="dev">विश्वगर्भा</td>
+      <td class="meaning"><em>Viśva-garbhā</em> — She who contains the whole universe in her womb. The Goddess is not merely the mother of the universe — the universe exists within her as a child within the womb: dependent on her entirely for its existence, nourished by her, and ultimately to return to her. This is perhaps the most radical statement of divine immanence.</td>
+    </tr>
+    <tr>
+      <td class="num">638</td>
+      <td class="dev">स्वर्णगर्भा</td>
+      <td class="meaning"><em>Svarṇa-garbhā</em> — She who is the cause of the universe; She who contains the golden cosmic egg. <em>Svarṇa-garbha</em> = golden womb, an epithet of Brahmā (Hiraṇyagarbha). Here the Goddess encompasses even Brahmā's primordial function: she is the golden womb from which the creator himself emerges.</td>
+    </tr>
+    <tr>
+      <td class="num">639</td>
+      <td class="dev">अवरदा</td>
+      <td class="meaning"><em>Avarāda</em> — She who destroys the unholy, the inferior, and the obstructing. <em>Vara</em> = excellent, pure. <em>Avarāda</em> = She who removes what is not excellent. This is the purifying function of the Goddess's grace: not punishment but the clearing away of whatever is not the highest.</td>
+    </tr>
+    <tr>
+      <td class="num">640</td>
+      <td class="dev">वागधीश्वरी</td>
+      <td class="meaning"><em>Vāg-adhīśvarī</em> — She who presides over speech. As the sovereign of Vāk, she governs all forms of communication — from the most ordinary utterance to the highest Vedic revelation. Every true word is her gift; every mantra is her direct presence in the domain of sound.</td>
+    </tr>
+  </table>
+
+  <div class="page-marker">Page 10</div>
+
+  <div class="nama-entry" id="n641">
+    <div class="nama-number">Nāmas 641–645 · The Vedānta Knowledge-Series</div>
+    <div class="nama-dev">ध्यानगम्या · अपरिच्छेद्या · ज्ञानदा · ज्ञानविग्रहा · सर्ववेदान्तसंवेद्या</div>
+    <div class="nama-roman">Dhyāna-gamyā · Aparicchedyā · Jñāna-dā · Jñāna-vigrahā · Sarva-vedānta-saṃvedyā</div>
+    <div class="nama-meaning">Five consecutive knowledge-epithets forming the most concentrated Vedāntic sequence in the Sahasranāma. She who is attainable through meditation alone (<em>Dhyāna-gamyā</em>); She whose limits cannot be ascertained — the unlimited one (<em>Aparicchedyā</em>); She who gives the knowledge of the self (<em>Jñāna-dā</em>); She who is the embodiment of knowledge itself (<em>Jñāna-vigrahā</em>); She who is known through all the Upaniṣads and Vedāntic texts (<em>Sarva-vedānta-saṃvedyā</em>). Together these nāmas make the bold claim that the entire Vedāntic tradition — all its texts, all its practices, all its teachers — converge on the knowledge of the Goddess as their ultimate subject.</div>
+    <div class="nama-tags"><span class="tag">Vedānta</span><span class="tag">Jñāna</span><span class="tag">Meditation</span><span class="tag">Unlimited</span></div>
+  </div>
+
+  <div class="nama-entry" id="n646">
+    <div class="nama-number">Nāma 646</div>
+    <div class="nama-dev">सत्यानन्दस्वरूपिणी</div>
+    <div class="nama-roman">Satyānanda-svarūpiṇī</div>
+    <div class="nama-meaning">She whose nature is existence (<em>sat</em>) and bliss (<em>ānanda</em>). The celebrated Upaniṣadic formula for Brahman is <em>Sat-Cit-Ānanda</em> (being-consciousness-bliss). The Goddess is identified with this formula — but note that nāma 700 completes the triad with <em>Sac-cidānanda-rūpiṇī</em>. Here (646) she is Sat and Ānanda; consciousness (<em>cit</em>) pervades both. The splitting of the triad over different nāmas is intentional: consciousness is the implicit ground of both being and bliss.</div>
+    <div class="nama-tags"><span class="tag">Sat-Cit-Ānanda</span><span class="tag">Brahman</span><span class="tag">Vedānta</span></div>
+  </div>
+
+  <table class="nama-table">
+    <tr>
+      <td class="num">647</td>
+      <td class="dev">लोपामुद्रार्चिता</td>
+      <td class="meaning"><em>Lopāmudrā-arcitā</em> — She who is worshipped by Lopāmudrā, the wife of the sage Agastya. Lopāmudrā is one of the very few women composers in the Vedic corpus — her hymn in the Ṛgveda (1.179) is a love poem to her husband. In the Śrī Vidyā tradition she is credited with the shorter form of the Pañcadaśī mantra; her worship of the Goddess establishes the tradition of women sages in the Śrī Vidyā lineage.</td>
+    </tr>
+    <tr>
+      <td class="num">648</td>
+      <td class="dev">लीलाकॢप्तब्रह्माण्डमण्डला</td>
+      <td class="meaning"><em>Līlā-kḷpta-brahmāṇḍa-maṇḍalā</em> — She who has created and maintained the universe purely as a sport, as <em>līlā</em>. The doctrine of <em>Īśvara-kṛpā</em> (divine grace) and <em>Brahman-līlā</em> (divine play): the Goddess has no need to create — she does so purely from overflowing bliss, the way a child plays not from necessity but from exuberance of spirit.</td>
+    </tr>
+    <tr>
+      <td class="num">649–652</td>
+      <td class="dev">अदृश्या · दृश्यरहिता · विज्ञात्री · वेद्यवर्जिता</td>
+      <td class="meaning">Four paradoxical pairs: She who is not perceived by ordinary sense organs (<em>Adṛśyā</em>) / She who has nothing to see, for whom there is no external object of vision (<em>Dṛśya-rahitā</em>); She who knows the truth of the physical universe (<em>Vijñātrī</em>) / She who has nothing left to know, for whom no external object of knowledge remains (<em>Vedya-varjitā</em>). These paradoxes are the Sahasranāma's most precise formulations of the non-dual condition: pure awareness that is simultaneously the knower of all and the state beyond knowing.</td>
+    </tr>
+    <tr>
+      <td class="num">653</td>
+      <td class="dev">योगिनी</td>
+      <td class="meaning"><em>Yoginī</em> — She who is constantly united with Parāśiva; She who possesses the power of yoga. As the supreme Yoginī, the Goddess is not merely the goal of yogic practice but its ground. She is the union that all yoga seeks: the merger of individual consciousness into the absolute.</td>
+    </tr>
+    <tr>
+      <td class="num">654–657</td>
+      <td class="dev">योगदा · योग्या · योगानन्दा · युगन्धरा</td>
+      <td class="meaning">The Yoga-series: She who bestows the power of yoga (<em>Yogadā</em>); She who is the proper object of all forms of yoga (<em>Yogyā</em>); She who is the bliss attained through yoga (<em>Yogānandā</em>); She who is the bearer of the yugas (cosmic time-cycles) (<em>Yugandharā</em>). Together these four nāmas present a complete theology of yoga: the Goddess gives it, deserves it, is its fruition, and contains the very time within which it takes place.</td>
+    </tr>
+  </table>
+
+  <div class="page-marker">Page 11</div>
+
+  <div class="nama-entry" id="n658">
+    <div class="nama-number">Nāma 658 · The Supreme Triad</div>
+    <div class="nama-dev">इच्छाशक्तिज्ञानशक्तिक्रियाशक्तिस्वरूपिणी</div>
+    <div class="nama-roman">Icchā-śakti-jñāna-śakti-kriyā-śakti-svarūpiṇī</div>
+    <div class="nama-meaning">She who is in the form of the three fundamental powers: the power of will (<em>icchā-śakti</em>), the power of knowledge (<em>jñāna-śakti</em>), and the power of action (<em>kriyā-śakti</em>). This is the single most comprehensive nāma in the theological register of the Sahasranāma. Every philosophical system that posits a supreme being must account for how that being knows, wills, and acts. The Śākta answer is: these three are not separate capacities of the Goddess — they are three aspects of her single, undivided being. Icchā without jñāna would be blind desire; jñāna without kriyā would be inert understanding; kriyā without icchā would be mechanical movement. The Goddess is all three in their living, dynamic unity.</div>
+    <div class="nama-tags"><span class="tag">Icchā-Śakti</span><span class="tag">Jñāna-Śakti</span><span class="tag">Kriyā-Śakti</span><span class="tag">Triadic Theology</span></div>
+  </div>
+
+  <table class="nama-table">
+    <tr>
+      <td class="num">659</td>
+      <td class="dev">सर्वाधारा</td>
+      <td class="meaning"><em>Sarvādhārā</em> — She who is the support of all. Every being, every world, every moment of time rests upon her as its ultimate ground. The metaphor of the tortoise supporting the earth (which appears in the Lalitopākhyāna's battle narrative) is a small-scale image of this cosmic truth: all that is, is supported by the Goddess.</td>
+    </tr>
+    <tr>
+      <td class="num">660</td>
+      <td class="dev">सुप्रतीष्ठा</td>
+      <td class="meaning"><em>Supratīṣṭhā</em> — She who is firmly established; the perfectly stable foundation. Her establishment is not merely in one place or tradition — she is the ontological stability underlying all that exists. Change and flux are possible only because she does not change; multiplicity is possible only because she is one.</td>
+    </tr>
+  </table>
+</section>
+
+<!-- SECTION IV — NĀMAS 661–700 -->
+<div class="page-marker">Page 12</div>
+<section id="s4" class="section-block">
+  <div class="section-header">
+    <div class="section-number">Section IV · Nāmas 661–700</div>
+    <div class="section-title-dev">सदसद्रूपधारिणी — सच्चिदानन्दरूपिणी</div>
+    <div class="section-title-eng">Being and Non-Being · Eight Forms · Duality Transcended · Sovereignty · Sat-Cit-Ānanda</div>
+    <div class="section-subtitle">Eight Forms · Loneliness of the Absolute · Non-Dual Ground · Imperial Rule</div>
+  </div>
+
+  <table class="nama-table">
+    <tr>
+      <td class="num">661</td>
+      <td class="dev">सदसद्रूपधारिणी</td>
+      <td class="meaning"><em>Sadasad-rūpa-dhāriṇī</em> — She who assumes the forms of both being (<em>sat</em>) and non-being (<em>asat</em>). The Goddess encompasses the Vedāntic dyad: the real and the apparent, the eternal and the temporal, the conscious and the inert. Both are her forms. This nāma answers the philosophical challenge of evil and negativity: the apparently negative is not outside the Goddess but within her as her own play.</td>
+    </tr>
+    <tr>
+      <td class="num">662</td>
+      <td class="dev">अष्टमूर्तिः</td>
+      <td class="meaning"><em>Aṣṭa-mūrtiḥ</em> — She who has eight forms. The eight forms are the five elements (earth, water, fire, air, ether) plus sun, moon, and the individual self (<em>jīva</em>) — or alternatively, the eight aspects of Śiva (Aṣṭa-mūrti-Śiva). In either interpretation, the teaching is that the physical universe in all its diversity is the eightfold body of the Goddess.</td>
+    </tr>
+    <tr>
+      <td class="num">663</td>
+      <td class="dev">अजाजेत्री</td>
+      <td class="meaning"><em>Ajājetrī</em> — She who conquers ignorance. <em>Ajā</em> = that which is unborn, but here used as the feminine of <em>aja</em> meaning primordial nescience or Māyā. The Goddess conquers her own Māyā through the dawn of Jñāna — she is simultaneously the Māyā that conceals and the Vidyā that reveals.</td>
+    </tr>
+    <tr>
+      <td class="num">664</td>
+      <td class="dev">लोकयात्रविधायिनी</td>
+      <td class="meaning"><em>Loka-yātrā-vidhāyinī</em> — She who directs the course of the worlds. The passage of the worlds through time — the rising and setting of civilisations, the turning of cosmic cycles — is not random but directed by the Goddess. She is the dharma underlying all historical movement.</td>
+    </tr>
+    <tr>
+      <td class="num">665</td>
+      <td class="dev">एकाकिनी</td>
+      <td class="meaning"><em>Ekākinī</em> — She who is the lone one, the solitary absolute. Before creation, during the great dissolution, in the deepest meditation — the Goddess is alone. Not lonely but self-sufficient in her aloneness. This is the state of <em>kevala</em> (nāma 623) expressed through the language of solitude rather than attribute-freedom.</td>
+    </tr>
+    <tr>
+      <td class="num">666</td>
+      <td class="dev">भूमरूपा</td>
+      <td class="meaning"><em>Bhūma-rūpā</em> — She who is the aggregate of all existing things; She who is in the form of the Bhūman. The Chāndogya Upaniṣad's term <em>bhūman</em> (the plenum, the full) is the name Sanatkumāra uses for Brahman — "where one sees nothing else, hears nothing else, understands nothing else — that is the Bhūman." The Goddess is this fullness.</td>
+    </tr>
+    <tr>
+      <td class="num">667–668</td>
+      <td class="dev">निर्द्वैता · द्वैतवर्जिता</td>
+      <td class="meaning">Two successive nāmas making the same point from different angles: She who is without the sense of duality (<em>Nirdvaitā</em>); She who is beyond duality, free from all duality (<em>Dvaita-varjitā</em>). The first negates the experience of duality; the second negates even the category of duality itself. Together they represent the Advaitic resolution: duality is not overcome in the Goddess — it never existed in her.</td>
+    </tr>
+    <tr>
+      <td class="num">669</td>
+      <td class="dev">अन्नदा</td>
+      <td class="meaning"><em>Annadā</em> — She who is the giver of food to all living things. In the most elemental register, the Goddess feeds the world. Every morsel of food is her gift; every act of eating is a form of worship. The Annapūrṇā form of the Goddess — "She who is full of food" — is one of India's most universally beloved.</td>
+    </tr>
+    <tr>
+      <td class="num">670–677</td>
+      <td class="dev">वसुदा · वृद्धा · ब्रह्मात्मैक्यस्वरूपिणी · बृहती · ब्राह्मणी · ब्राह्मी · ब्रह्मानन्दा · बलिप्रिया</td>
+      <td class="meaning">The Brahman-series: She who gives wealth (<em>Vasudā</em>); She who is ancient, without beginning (<em>Vṛddhā</em>); She whose nature is the non-dual union of Brahman and Ātman (<em>Brahmātmaikya-svarūpiṇī</em>) — perhaps the most direct statement of Advaita in the Sahasranāma; She who is immense, vast (<em>Bṛhatī</em>); She who is predominantly Sāttvic in nature (<em>Brāhmaṇī</em>); She who presides over speech in the creative mode (<em>Brāhmī</em>); She immersed in the bliss of Brahman (<em>Brahmānandā</em>); She who is especially fond of sacrificial offerings (<em>Balipriyā</em>).</td>
+    </tr>
+  </table>
+
+  <div class="page-marker">Page 13</div>
+
+  <div class="nama-entry" id="n684">
+    <div class="nama-number">Nāmas 684–692 · The Imperial Sovereignty Series</div>
+    <div class="nama-dev">राजराजेश्वरी · राज्यदायिनी · राज्यवल्लभा · राजत्कृपा · राजपीठनिवेशितनिजाश्रिता · राज्यलक्ष्मी · कोशनाथा · चतुरङ्गबलेश्वरी · साम्राज्यदायिनी</div>
+    <div class="nama-roman">Rāja-rājeśvarī through Sāmrājya-dāyinī</div>
+    <div class="nama-meaning">The great sovereignty-cluster of nine consecutive imperial epithets. She is the ruler of kings and emperors (<em>Rāja-rājeśvarī</em>); the giver of dominion (<em>Rājya-dāyinī</em>); the protector of all dominions (<em>Rājya-vallabhā</em>); She of captivating compassion that draws all toward her (<em>Rājat-kṛpā</em>); She who establishes those who take refuge in her on royal thrones (<em>Rājapīṭha-niveśita-nijāśritā</em>); the embodiment of the world's prosperity (<em>Rājya-lakṣmī</em>); mistress of the treasury (<em>Kośa-nāthā</em>); commander of the four divisions of the army — elephant, chariot, cavalry, and infantry (<em>Caturaṅga-baleśvarī</em>); bestower of imperial sovereignty over all three worlds (<em>Sāmrājya-dāyinī</em>).</div>
+    <div class="nama-tags"><span class="tag">Imperial Sovereignty</span><span class="tag">Rāja-rājeśvarī</span><span class="tag">Four-Fold Army</span></div>
+  </div>
+
+  <table class="nama-table">
+    <tr>
+      <td class="num">693</td>
+      <td class="dev">सत्यसन्धा</td>
+      <td class="meaning"><em>Satya-sandhā</em> — She who is devoted to truth; She who always fulfils her vows and promises. Every boon the Goddess grants is delivered; every protection she offers is maintained. Her truthfulness is ontological — she cannot be other than what she is.</td>
+    </tr>
+    <tr>
+      <td class="num">694</td>
+      <td class="dev">सागरमेखला</td>
+      <td class="meaning"><em>Sāgara-mekhalā</em> — She who is girdled by the oceans. The earth itself is the Goddess's body — and the oceans are her girdle. This nāma presents the macrocosmic scale of the Goddess's physical form: she wears the seven seas as ornaments.</td>
+    </tr>
+    <tr>
+      <td class="num">695</td>
+      <td class="dev">दीक्षिता</td>
+      <td class="meaning"><em>Dīkṣitā</em> — She who is always under a vow. The Goddess herself is initiating and initiated — she embodies the state of <em>dīkṣā</em> (consecration) permanently. This makes every initiated devotee of the Śrī Vidyā tradition a member of the Goddess's own household.</td>
+    </tr>
+    <tr>
+      <td class="num">696–699</td>
+      <td class="dev">दैत्यशमनी · सर्वलोकवशङ्करी · सर्वार्थदात्री · सावित्री</td>
+      <td class="meaning">She who destroys all demonic forces (<em>Daitya-śamanī</em>); She who keeps all the worlds under her control (<em>Sarva-loka-vaśaṅkarī</em>); She who grants all desires of all who approach her (<em>Sarvārtha-dātrī</em>); She who is the creative power in the universe, identified with Sāvitrī — the cosmic sun-goddess and the Gāyatrī mantra personified (<em>Sāvitrī</em>).</td>
+    </tr>
+    <tr>
+      <td class="num">700</td>
+      <td class="dev">सच्चिदानन्दरूपिणी</td>
+      <td class="meaning"><em>Sac-cid-ānanda-rūpiṇī</em> — She who is of the nature of Existence-Consciousness-Bliss. The complete Upaniṣadic formula for Brahman — <em>Sat</em> (pure being), <em>Cit</em> (pure consciousness), <em>Ānanda</em> (pure bliss) — is the Goddess's own essential nature. Nāma 700 is mathematically significant in the Sahasranāma: at the seven-hundredth name, the text places its most comprehensive theological statement.</td>
+    </tr>
+  </table>
+</section>
+
+<!-- SECTION V — NĀMAS 701–730 -->
+<div class="page-marker">Page 14</div>
+<section id="s5" class="section-block">
+  <div class="section-header">
+    <div class="section-number">Section V · Nāmas 701–730</div>
+    <div class="section-title-dev">देशकालापरिच्छिन्ना — स्वतन्त्रा</div>
+    <div class="section-title-eng">Beyond Time and Space · Omnipresence · Sacred Tradition · Guru's Form · Freedom</div>
+    <div class="section-subtitle">Sarvagā · Scriptural Form · Guha's Mother · Free from All Limitations</div>
+  </div>
+
+  <table class="nama-table">
+    <tr>
+      <td class="num">701</td>
+      <td class="dev">देशकालापरिच्छिन्ना</td>
+      <td class="meaning"><em>Deśa-kāla-aparicchinā</em> — She who is not limited by time and space. Every finite thing has a location in space and a position in time. The Goddess alone is present everywhere simultaneously and at all times simultaneously — not as a spatial extension (she is not "spread out") but as the ontological ground of both space and time.</td>
+    </tr>
+    <tr>
+      <td class="num">702</td>
+      <td class="dev">सर्वगा</td>
+      <td class="meaning"><em>Sarvagā</em> — She who pervades all worlds and all living and non-living things; She who is omnipresent. This is the most direct statement of divine omnipresence in the Sahasranāma. There is no exception: the Goddess pervades even the inert, the ugly, the painful, the sinful. This is not approval of sin but the recognition that she is the being even of what opposes her.</td>
+    </tr>
+    <tr>
+      <td class="num">703</td>
+      <td class="dev">सर्वमोहिनी</td>
+      <td class="meaning"><em>Sarva-mohinī</em> — She who deludes all. The Goddess's power of Māyā, which creates the appearance of multiplicity in what is fundamentally one, is not a flaw in the divine plan — it is its most creative instrument. Without <em>moha</em> (the compelling reality of the world) there would be no world, no beauty, no love, no longing, and no liberation.</td>
+    </tr>
+    <tr>
+      <td class="num">704</td>
+      <td class="dev">सरस्वती</td>
+      <td class="meaning"><em>Sarasvatī</em> — She who is in the form of knowledge, learning, and eloquence. As Sarasvatī, the Goddess is the divine patroness of all intellectual and artistic pursuit — learning, language, music, poetry. This nāma connects directly to the sonic analysis of the session: the Sarasvatī who governs music is an aspect of Lalitā.</td>
+    </tr>
+    <tr>
+      <td class="num">705</td>
+      <td class="dev">शास्त्रमयी</td>
+      <td class="meaning"><em>Śāstra-mayī</em> — She who is in the form of the scriptures. All sacred texts — Vedas, Upaniṣads, Purāṇas, Āgamas, Tantras — are forms of the Goddess. This creates a beautiful circularity: the Sahasranāma itself, as one such scripture, is the Goddess describing herself.</td>
+    </tr>
+    <tr>
+      <td class="num">706</td>
+      <td class="dev">गुहाम्बा</td>
+      <td class="meaning"><em>Guhāmbā</em> — She who is the mother of Guha (Skanda); She who dwells in the cave of the heart. The double meaning is characteristic of the Sahasranāma's finest nāmas: the Goddess as mother of the divine warrior-son, and as the awareness dwelling in the interior cave of consciousness — the <em>guhā</em> of the Kaṭha Upaniṣad, where the Ātman is hidden.</td>
+    </tr>
+    <tr>
+      <td class="num">707</td>
+      <td class="dev">गुह्यरूपिणी</td>
+      <td class="meaning"><em>Guhya-rūpiṇī</em> — She who has a secret form. Her ultimate nature is secret not because it is hidden from us but because it transcends the categories of form altogether. The "secret form" of the Goddess is her formless, attribute-free being — which is paradoxically the most real of all her forms.</td>
+    </tr>
+    <tr>
+      <td class="num">708</td>
+      <td class="dev">सर्वोपाधिविनिर्मुक्ता</td>
+      <td class="meaning"><em>Sarva-upādhi-vinirmuktā</em> — She who is completely free from all limiting conditions and superimpositions. <em>Upādhi</em> = the limiting adjunct, the condition that makes infinite consciousness appear limited. The Goddess has no upādhis — she is pure, unlimited consciousness without any superimposed condition.</td>
+    </tr>
+    <tr>
+      <td class="num">709</td>
+      <td class="dev">सदाशिवपतिव्रता</td>
+      <td class="meaning"><em>Sadāśiva-pativratā</em> — She who is Sadāśiva's devoted wife. The supreme theological paradox of the Sahasranāma is most acute here: She who is beyond all conditions (nāma 708) is simultaneously the supremely devoted wife of Śiva (709). The absolute is in love. The formless is in relationship. This paradox is not resolved — it is the living truth that the tradition asks its devotees to inhabit.</td>
+    </tr>
+    <tr>
+      <td class="num">710</td>
+      <td class="dev">सम्प्रदायेश्वरी</td>
+      <td class="meaning"><em>Sampradāya-īśvarī</em> — She who is the guardian of sacred traditions. Every authentic spiritual lineage — Vedic, Tantric, devotional — is under her sovereignty. She is not the property of any one tradition; all traditions are her properties.</td>
+    </tr>
+    <tr>
+      <td class="num">711–712</td>
+      <td class="dev">साधु · ई</td>
+      <td class="meaning"><em>Sādhu</em> — She who possesses equanimity; She who is perfectly balanced. <em>Ī</em> — She who is the symbol and power of the letter 'Ī', the second vowel of the Sanskrit alphabet, representing the Śakti-bīja Hrīṃ. Some editions read both 711 and 712 as <em>Sādhvī</em> (supremely virtuous, chaste) though this is a repetition; the authoritative Bhāskararāya reading preserves the distinction.</td>
+    </tr>
+    <tr>
+      <td class="num">713</td>
+      <td class="dev">गुरुमण्डलरूपिणी</td>
+      <td class="meaning"><em>Guru-maṇḍala-rūpiṇī</em> — She who embodies in herself the lineage of Gurus. The <em>guru-maṇḍala</em> — the circle of all teachers in a tradition from the original divine source to the present human teacher — is the Goddess's own body. To revere the teacher is to revere the Goddess; to receive initiation from a teacher is to receive it from her.</td>
+    </tr>
+    <tr>
+      <td class="num">714</td>
+      <td class="dev">कुलोत्तीर्णा</td>
+      <td class="meaning"><em>Kulottīrṇā</em> — She who transcends the senses; She who rises above the Kula (the entire system of Śākta tradition). The Goddess is not bound even by her own tradition — she transcends it from within. The highest teaching of any tradition is that the tradition points beyond itself.</td>
+    </tr>
+    <tr>
+      <td class="num">715–719</td>
+      <td class="dev">भगाराध्या · माया · मधुमती · मही · गणाम्बा</td>
+      <td class="meaning">She worshipped in the solar disc, the seat of supreme light (<em>Bhagārādhyā</em>); She who is Māyā — the creative illusion-power itself (<em>Māyā</em>); She whose nature is sweet as honey (<em>Madhumatī</em>); She who is the earth-goddess (<em>Mahī</em>); She who is the mother of Śiva's attendant hosts (<em>Gaṇāmbā</em>).</td>
+    </tr>
+    <tr>
+      <td class="num">720–725</td>
+      <td class="dev">गुह्यकाराध्या · कोमलाङ्गी · गुरुप्रिया · स्वतन्त्रा · सर्वतन्त्रेशी · दक्षिणामूर्तिरूपिणी</td>
+      <td class="meaning">Worshipped by Guhyakas (a class of celestial beings) (<em>Guhyakārādhyā</em>); She with beautiful, graceful limbs (<em>Komalāṅgī</em>); beloved of the Gurus (<em>Guru-priyā</em>); She who is absolutely free from all limitations — the most unqualified statement of divine freedom in the Sahasranāma (<em>Svatantrā</em>); goddess of all Tantric systems (<em>Sarvatantreśī</em>); She who is in the form of Dakṣiṇāmūrti — Śiva as the silent teacher, the guru who transmits wisdom through silence alone (<em>Dakṣiṇāmūrti-rūpiṇī</em>).</td>
+    </tr>
+    <tr>
+      <td class="num">726–730</td>
+      <td class="dev">सनकादिसमाराध्या · शिवज्ञानप्रदायिनी · चित्कला · आनन्दकलिका · प्रेमरूपा</td>
+      <td class="meaning">Worshipped by Sanaka and the four mind-born sons of Brahmā who maintained eternal celibacy and supreme devotion (<em>Sanakādi-samārādhyā</em>); She who bestows the knowledge of Śiva — <em>śiva-jñāna</em> being knowledge of the Absolute (<em>Śiva-jñāna-pradāyinī</em>); She who is the consciousness within Brahman (<em>Cit-kalā</em>); She who is the bud of bliss, the anticipation of ānanda that flowers in liberation (<em>Ānanda-kalikā</em>); She who is pure love itself (<em>Prema-rūpā</em>).</td>
+    </tr>
+  </table>
+</section>
+
+<!-- SECTION VI — NĀMAS 731–766 -->
+<div class="page-marker">Page 15</div>
+<section id="s6" class="section-block">
+  <div class="section-header">
+    <div class="section-number">Section VI · Nāmas 731–766</div>
+    <div class="section-title-dev">प्रियङ्करी — जपापुष्पनिभाकृतिः</div>
+    <div class="section-title-eng">What Is Dear · Names of Recitation · Dance · Liberation Forms · Metaphors of Grace</div>
+    <div class="section-subtitle">Lāsya Dance · Dissolution · Modesty · Rambhā's Worship · Nature Metaphors</div>
+  </div>
+
+  <table class="nama-table">
+    <tr>
+      <td class="num">731</td>
+      <td class="dev">प्रियङ्करी</td>
+      <td class="meaning"><em>Priyaṅkarī</em> — She who grants what is dear to her devotees. Not merely what they ask for but what is truly dear — the Goddess knows the difference between the expressed desire and the heart's deepest longing, and grants the latter.</td>
+    </tr>
+    <tr>
+      <td class="num">732</td>
+      <td class="dev">नामपारायणप्रीता</td>
+      <td class="meaning"><em>Nāma-pārāyaṇa-prītā</em> — She who is pleased by the repetition and recitation of her names. This nāma is the Sahasranāma's self-justification: the practice of reciting the thousand names is specifically endorsed by the Goddess within those very names. The practice and the theological statement are one.</td>
+    </tr>
+    <tr>
+      <td class="num">733</td>
+      <td class="dev">नन्दिविद्या</td>
+      <td class="meaning"><em>Nandi-vidyā</em> — She who is the deity worshipped by the Nandi mantra. Nandī, the bull-guardian of Śiva, is also a master of sacred knowledge. The mantra tradition associated with Nandī is one of the streams that flows into the Śrī Vidyā synthesis.</td>
+    </tr>
+    <tr>
+      <td class="num">734</td>
+      <td class="dev">नटेश्वरी</td>
+      <td class="meaning"><em>Naṭeśvarī</em> — She who is the consort of Naṭeśa (Śiva as the Lord of Dance, Naṭarāja). The cosmic dance of Śiva — the <em>Ānanda-tāṇḍava</em> — takes place in the Goddess's presence; she is the witnessing awareness that makes his dance visible and meaningful.</td>
+    </tr>
+    <tr>
+      <td class="num">735</td>
+      <td class="dev">मिथ्याजगदधिष्ठाना</td>
+      <td class="meaning"><em>Mithyā-jagad-adhiṣṭhānā</em> — She who is the basis of the illusory universe. The world is <em>mithyā</em> — not false in the sense of non-existent, but not ultimately real in the sense of being dependent on a higher reality (the Goddess) for its apparent existence. The Goddess is the <em>adhiṣṭhāna</em> — the substratum — upon which the world appears, like a dream appearing on the ground of waking consciousness.</td>
+    </tr>
+    <tr>
+      <td class="num">736</td>
+      <td class="dev">मुक्तिदा</td>
+      <td class="meaning"><em>Mukti-dā</em> — She who gives liberation. The path and the destination: her grace initiates the spiritual path (as guru) and her grace completes it (as liberation). The devotee who surrenders to her finds that they never needed to go anywhere — they were always already in her.</td>
+    </tr>
+    <tr>
+      <td class="num">737</td>
+      <td class="dev">मुक्तिरूपिणी</td>
+      <td class="meaning"><em>Mukti-rūpiṇī</em> — She who is in the form of liberation. Not merely the giver of liberation (736) but liberation itself in its essential form. The state of being free is not different from the state of being the Goddess. When the devotee is liberated, what they discover is: "I was always her."</td>
+    </tr>
+    <tr>
+      <td class="num">738</td>
+      <td class="dev">लास्यप्रिया</td>
+      <td class="meaning"><em>Lāsya-priyā</em> — She who is fond of the Lāsya dance. The Lāsya is the graceful, feminine, flowing dance form — the counterpart of Śiva's fierce Tāṇḍava. The Goddess's affection for Lāsya reveals the aesthetic dimension of her nature: she is the principle of graceful, purposive, beautiful movement.</td>
+    </tr>
+    <tr>
+      <td class="num">739</td>
+      <td class="dev">लयकरी</td>
+      <td class="meaning"><em>Laya-karī</em> — She who causes absorption and dissolution. <em>Laya</em> = dissolution, absorption — in music the term for the absorbed state where the performer loses themselves in the rāga; in yoga the term for the dissolution of individual consciousness into the universal. The Goddess is the cause of both.</td>
+    </tr>
+    <tr>
+      <td class="num">740</td>
+      <td class="dev">लज्जा</td>
+      <td class="meaning"><em>Lajjā</em> — She who exists as modesty in all living beings. The quality of <em>lajjā</em> — shame, shyness, modesty — that prevents human beings from descending into cruelty and selfishness is the Goddess's own presence. Every blush, every hesitation before wrongdoing, every sense of propriety is the Goddess working through the human heart.</td>
+    </tr>
+    <tr>
+      <td class="num">741</td>
+      <td class="dev">रम्भादिवन्दिता</td>
+      <td class="meaning"><em>Rambhādi-vanditā</em> — She who is adored by the celestial damsels such as Rambhā. The Apsarases — the divine feminine beings of supreme beauty who inhabit the celestial realms — themselves bow before the Goddess. She is the beauty that all beauty imitates.</td>
+    </tr>
+  </table>
+
+  <div class="page-marker">Page 16</div>
+
+  <div class="nama-entry" id="n742">
+    <div class="nama-number">Nāmas 742–749 · The Nature Metaphors — The Goddess as Cosmic Relief</div>
+    <div class="nama-dev">भवदावसुधावृष्टिः · पापारण्यदवानला · दौर्भाग्यतूलवातूला · जराध्वान्तरविप्रभा · भाग्याब्धिचन्द्रिका · भक्तचित्तकेकिघनाघना · रोगपर्वतदम्भोलिः · मृत्युदारुकुठारिका</div>
+    <div class="nama-roman">Eight magnificent nature-metaphors</div>
+    <div class="nama-meaning">Eight successive nāmas that constitute the most sustained and beautiful metaphorical sequence in the Sahasranāma — each a double-compound describing the Goddess as a natural force that brings relief from a cosmic affliction:
+    She is the rain of nectar falling on the forest fire of worldly existence (<em>Bhava-dāva-sudhā-vṛṣṭiḥ</em>); wild fire consuming the forest of sins (<em>Pāpāraṇya-davānalā</em>); the gale that drives away the cotton wisps of misfortune (<em>Daurbhāgya-tūla-vātūlā</em>); the sunlight that dispels the darkness of old age (<em>Jarā-dhvānta-ravi-prabhā</em>); the full moon to the ocean of good fortune — causing it to swell and rise (<em>Bhāgyābdhi-candrikā</em>); the cloud that gladdens the peacocks that are the hearts of her devotees (<em>Bhakta-citta-keki-ghana-ghanā</em>); the thunderbolt that shatters the mountain of disease (<em>Roga-parvata-dambholiḥ</em>); the axe that cuts down the tree of death (<em>Mṛtyu-dāru-kuṭhārikā</em>). These eight nāmas present the Goddess as the cosmic antidote to the eight great afflictions of saṃsāric existence.</div>
+    <div class="nama-tags"><span class="tag">Nature Metaphors</span><span class="tag">Eight Afflictions</span><span class="tag">Grace</span><span class="tag">Poetry</span></div>
+  </div>
+
+  <table class="nama-table">
+    <tr>
+      <td class="num">750</td>
+      <td class="dev">महेश्वरी</td>
+      <td class="meaning"><em>Maheśvarī</em> — She who is the supreme goddess. After the intensely poetic metaphor-sequence of 742–749, the Sahasranāma returns to the starkest possible epithet: she is simply the great sovereign. No metaphor is needed — the Goddess is the Maheśvarī.</td>
+    </tr>
+    <tr>
+      <td class="num">751</td>
+      <td class="dev">महाकाली</td>
+      <td class="meaning"><em>Mahā-kālī</em> — She who is the great Kālī. In the Devī Māhātmya, Mahā-kālī is the form that arises from the concentrated darkness of Viṣṇu's sleep and kills the demons Madhu and Kaiṭabha. She is the Goddess in her most absolute, terrifying, time-transcending aspect.</td>
+    </tr>
+    <tr>
+      <td class="num">752–753</td>
+      <td class="dev">महाग्रासा · महाशना</td>
+      <td class="meaning"><em>Mahā-grāsā</em> — She who devours everything great; the great devourer. <em>Mahāśanā</em> — She who eats everything that is great. The Goddess's cosmic consumption of all that exists at the time of dissolution (<em>pralaya</em>) is not destruction but reabsorption — the return of all manifestation into the womb of the absolute for the next cycle of creation.</td>
+    </tr>
+    <tr>
+      <td class="num">754</td>
+      <td class="dev">अपर्णा</td>
+      <td class="meaning"><em>Aparṇā</em> — She who owes no debt; She who has no leaf. When Pārvatī performed the most extreme austerities to win Śiva, she ultimately gave up even eating leaves. Her mother Menā exclaimed "A-parnā!" — "No leaf!" — and the name stuck as an epithet of the Goddess at the peak of her ascetic power, when even the most minimal sustenance was given up.</td>
+    </tr>
+    <tr>
+      <td class="num">755–756</td>
+      <td class="dev">चण्डिका · चण्डमुण्डासुरनिषूदिनी</td>
+      <td class="meaning"><em>Caṇḍikā</em> — She who is angry at the wicked, the fierce one. <em>Caṇḍa-muṇḍāsura-niṣūdinī</em> — She who killed Caṇḍa, Muṇḍa, and other Asuras. These are the famous demons of the Devī Māhātmya whose slaying by the Goddess — their heads brought to Durgā by Kālī as trophies — establishes Kālī's epithet <em>Cāmuṇḍā</em>.</td>
+    </tr>
+    <tr>
+      <td class="num">757–760</td>
+      <td class="dev">क्षराक्षरात्मिका · सर्वलोकेशी · विश्वधारिणी · त्रिवर्गदात्री</td>
+      <td class="meaning">She who is in the form of both the perishable (<em>kṣara</em>) and the imperishable (<em>akṣara</em>) Ātman (<em>Kṣarākṣarātmikā</em>); ruler of all worlds (<em>Sarva-lokeśī</em>); She who supports the universe (<em>Viśva-dhāriṇī</em>); She who bestows the three goals of life — <em>dharma</em>, <em>artha</em>, and <em>kāma</em> (<em>Trivarga-dātrī</em>), implying that <em>mokṣa</em> (liberation) is given as a matter of course when the devotee has received the three.</td>
+    </tr>
+    <tr>
+      <td class="num">761–766</td>
+      <td class="dev">सुभगा · त्र्यम्बका · त्रिगुणात्मिका · स्वर्गापवर्गदा · शुद्धा · जपापुष्पनिभाकृतिः</td>
+      <td class="meaning">The closing sequence of this section: She who is the seat of all prosperity (<em>Subhagā</em>); She who has three eyes (<em>Tryambakā</em>); She who is the essence of the three guṇas — Sattva, Rajas, Tamas (<em>Triguṇātmikā</em>); She who bestows both heaven and liberation (<em>Svargāpavarga-dā</em>); She who is the purest of the pure (<em>Śuddhā</em>); She whose body is like the hibiscus flower — the red hibiscus being the Goddess's most characteristic flower, offered to her in worship and used in Tantric rites (<em>Japā-puṣpa-nibhākṛtiḥ</em>). This last nāma of the section returns from cosmic abstractions to the most immediate, intimate image: the Goddess's body as a flower that her devotees hold in their hands.</td>
+    </tr>
+  </table>
+</section>
+
+<!-- ADHYĀYA 20 -->
+<div class="page-marker">Page 17</div>
+<hr class="page-break"/>
+<section id="adhyaya20" class="section-block">
+  <div class="section-header">
+    <div class="section-number">Adhyāya 20 · Brahmāṇḍa Purāṇa · Uttarabhāga</div>
+    <div class="section-title-dev">किरिचक्ररथस्थदेवताः</div>
+    <div class="section-title-eng">The Deities on the Kiricakraratha</div>
+    <div class="section-subtitle">The Chariot of Daṇḍanāthā · Five Steps · The Boar-Faced Potriṇī · Dhātunāthās</div>
+  </div>
+
+  <div class="chapter-block">
+    <div class="chapter-label">The Structure of the Kiricakraratha</div>
+    <div class="chapter-title-dev">पोत्रिणी-रथस्य विन्यासः</div>
+    <div class="chapter-title-eng">The Boar-Wheeled Chariot of Daṇḍanāthā · Its Five Steps and Their Presiding Deities</div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 1–5 · Potriṇī on the First Step</div>
+      <div class="verse-text">
+        Hayagrīva said: "O intelligent one, listen to the deities stationed in the five steps of the prominent chariot Kiricakra. Victory to those who listen to their names.
+        <br/><br/>
+        Daṇḍanāyikā (Leader of the Army) was stationed on the first step named Bindu. She — the destroyer of the haughty and wicked thorns of worlds — appeared to make Jayaśrī (glory of victory) dance there by means of different kinds of flames. She had torn and pierced the haughty Dānavas with the terrific blow of her snout. Her curved teeth resembled the crescent moon, and a dense darkness obscured the rays of those teeth. Her creeper-like tender body was dark in complexion like the clusters of clouds in the rainy season. She was a permanent ornament to the leading chariot Kiricakra — the Potriṇī who had made all the revolving worlds her adopted children."
+      </div>
+    </div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 6–8 · The Second Step — Three Deities</div>
+      <div class="verse-text">
+        Three deities — Jṛmbhiṇī (She who yawns open the worlds), Mohinī (She who enchants), and Stambhinī (She who paralyses) — occupied the second step at the same centre of the chariot. They held the pestle, plough, and liquor pot studded with many precious stones by means of their sprout-like hands where bangles set with rubies dazzled brilliantly. These deities had very sharp and dreadful eyes, burning Daitya soldiers by means of fiery flames without hesitation. They served the Boar-faced goddess continuously.
+      </div>
+    </div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 9–12 · The Third Step — Five Deities Beginning with Andhinī</div>
+      <div class="verse-text">
+        Five deities beginning with Andhinī were stationed on the third step. They had fixed their base in the Devīyantra. They appeared to split the three worlds by means of their boisterous laughter, like the flames of fire that burn the universe at the end of the world and that had assumed the guise of women. With their tongues lolling and licking the sides, they were desirous of lapping up the flowing blood of all the soldiers of Bhaṇḍāsura. Thus they served Daṇḍanāthā of terrific exploits continuously.
+      </div>
+    </div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 12–14 · The Fourth Step — Six Mātṛ Deities</div>
+      <div class="verse-text">
+        Six deities were stationed on the fourth step — Brāhmī and others, excepting Vārāhī (the fifth) and Caṇḍikā or Mahālakṣmī (the eighth). Their bodies appeared to discharge blazing flames from the Ṣaṭcakra (six mystical nerve plexuses). They appeared ready to drink the Dānavas by means of their great exploits — and it was at the behest of Daṇḍanāthā that they resorted to that region.
+      </div>
+    </div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 15–19 · The Dhātunāthās · The Seven Bodily-Substance Goddesses</div>
+      <div class="verse-text">
+        Seven deities called Dhātunāthās (Governors of the bodily substances) were stationed beneath the same step. They were Yakṣiṇī, Śaṅkhinī, Lākinī, Hākinī, Śākinī, Ḍākinī, and a seventh Hākinī who had the united forms of all of them. They drank and consumed the seven Dhātus — blood, skin, flesh, fat, bones, marrow, and semen — of enemies. They had hideous faces; with their harsh leonine roars they filled ten quarters. They were called Dhātunāthās because they were present in all the bodily substances. They were the bestowers of the eight Siddhis beginning with Aṇimā.
+        <br/><br/>
+        They were experts in deluding, slaying, paralysing, striking, swallowing, and exterminating wicked Daityas. In regard to those who were devotees, they annihilated all adversities.
+      </div>
+    </div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 25–36 · Krodhinī and Stambhinī · The Two Great Weapons · The Caṇḍoccaṇḍa Lion</div>
+      <div class="verse-text">
+        On the other side of the same step were stationed two deities — Krodhinī and Stambhinī — who fanned with two Cāmaras as their tender hands moved to and fro. They were excessively proud after drinking the liquor and blood of demon soldiers.
+        <br/><br/>
+        Two excellent weapons — ploughshare and pestle — assuming the form of deities, took up their residence on either side of the leading chariot Kiricakra. They held the bodies of their own weapons at the place of their crown. It was with these two weapons that Lalitā Daṇḍanāyikā would cut off and kill the Dānava named Viṣaṅga in the battle.
+        <br/><br/>
+        An exceedingly terrible lion named Caṇḍoccaṇḍa was at the same step in front of Daṇḍanāthā. The sky echoed with his roaring sound and the cardinal points were deafened by the sounds produced when gnashing his teeth. He had four hands and three eyes, holding trident, sword, and nooses. It was by seeing alone — observing everything — that he served Goddess Potriṇī continuously.
+      </div>
+    </div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 34–53 · The Sixth Step — Eight Deities · The Buffalo Vehicle · The Eight Guardians · The Ten Bhairavas</div>
+      <div class="verse-text">
+        Eight deities beginning with Vārtālī were stationed on the sixth step: Vārtālī, Vārāhī, Vārāhamukhī, Andhinī, Rodhinī, Jṛmbhiṇī, Mohinī, and Stambhinī. Their voices were as loud as the sound produced when eight mountains clash together. Eight serpents served as their shining ornaments. They sacrificed crores of Dānavas in the fire of the prowess of their mighty arms.
+        <br/><br/>
+        The royal vehicle of Daṇḍanāthā — a buffalo of dusky white colour — was stationed on their left. Its horns were half a Krośa apart; its body a Krośa long; it was covered with hairs as sharp as swords; its tail resembled the baton of the god of death. Its deep and hot breath stirred up the oceans. It seemed to laugh derisively at the buffalo of Kāla by means of its crackling grunt.
+        <br/><br/>
+        Below them were stationed Indra and the other eight guardians of the cardinal points, sixty-four crores of celestial damsels, Siddhas, Agni, Sādhyas, Viśvakarmā, Māyā, divine Mothers, Rudras, Piśācas, Rākṣasas, Mitra, Gandharvas, Bhūtagaṇas, Vāruṇa, Vasus, Vidyādharas, Kinnaras, Tumburu, Nārada, Yakṣa, Soma, Kubera, and Govinda — all come in forms of Śaktis to serve Mantriṇāthā.
+        <br/><br/>
+        Beneath the same step in all eight quarters were stationed ten Bhairavas known for their profound exploits: Hetuka, Tripurāri, Agnibhairava, Yamajihva, Ekapāda, Kāla, Karālaka, Bhīmarūpa, Hāṭakeśa, and Acala — along with ten crores of soldiers each.
+      </div>
+    </div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 86–106 · The Three Chariots Move Together</div>
+      <div class="verse-text">
+        Wherever the chariot Cakrarāja went, the excellent chariot Geya also went; wherever Geya proceeded, the excellent chariot Kiricakra accompanied it. In the midst of thousands of armies of Śakti, these three splendid chariots that appeared like the three worlds set in motion proceeded on and on. It appeared as though the mountains Meru, Mandara, and Vindhya had joined together as one unit.
+        <br/><br/>
+        There were six charioteers in the leading chariot of Lalitā: Irādevī, Tripura-bhairavī, Saṃhāra-bhairava, Raktayoginīvallabha, Sārasa, and Cāmuṇḍā. Hasantikā was the charioteer of the Geyacakra. Stambhinī is remembered as the charioteer of the Kiricakra.
+        <br/><br/>
+        The excellent chariot of Lalitā had a height of ten Yojanas. A great umbrella studded with pearls having an extent of ten Yojanas was present only in the chariot of Laliteśānī and nowhere else. Thus Lalitā, the great goddess, advanced against demon Bhaṇḍa with a desire to accomplish his death.
+      </div>
+    </div>
+  </div>
+
+  <div class="footnote-block">
+    <div class="footnote-title">Footnotes · Adhyāya 20</div>
+    <p class="footnote" data-n="1">[1] The chariot of the Kiricakra has five steps in the text's explicit statement, but the distribution of deities creates a confused numeration — the commentary resolves this as the result of partial textual corruption in transmission.</p>
+    <p class="footnote" data-n="2">[2] The Dhātunāthās — the seven goddesses presiding over the seven bodily substances — are the Kiricakra's unique theological contribution, mapping the cosmic goddesses onto the physiological reality of the human body.</p>
+    <p class="footnote" data-n="3">[3] The ten Bhairavas at the base of the chariot correspond to the ten guardians of the cardinal points (plus zenith and nadir), establishing a complete cosmological geography around the chariot.</p>
+  </div>
+</section>
+
+<!-- ADHYĀYA 21 -->
+<div class="page-marker">Page 20</div>
+<section id="adhyaya21" class="section-block">
+  <div class="section-header">
+    <div class="section-number">Adhyāya 21 · Brahmāṇḍa Purāṇa · Uttarabhāga</div>
+    <div class="section-title-dev">भण्डासुरगर्जनम्</div>
+    <div class="section-title-eng">Boasting of Bhaṇḍāsura</div>
+    <div class="section-subtitle">Evil Portents in Śūnyaka · The Council Chamber · Viśukra's Contempt · Viṣaṅga's Prudence</div>
+  </div>
+
+  <div class="chapter-block">
+    <div class="chapter-label">Verses 1–47 · The City of Śūnyaka and Its Omens</div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 1–20 · The Portentous Phenomena</div>
+      <div class="verse-text">
+        On hearing the loud noise of the march of goddess Lalitā on her campaign against Bhaṇḍāsura, those who resided in the city of Bhaṇḍāsura became exceedingly agitated. The city of Śūnyaka — on the shore of the great ocean near the mountain Mahendra — extended over a hundred Yojanas. It was the permanent residence of the elder brother of Viṣaṅga.
+        <br/><br/>
+        The entire city became frequently enveloped in smoke as though caused by portentous phenomena indicating great calamity. Walls underwent untimely cracks. Great meteors hovered round the city. Earthquake — the first and foremost among portentous phenomena — occurred there. The entire earth blazed forth. Herons, vultures, and cranes perched themselves on tops of flagstaffs and hooted loudly looking at the disc of the sun. Devils and goblins seemed to speak harshly through ethereal voices. Banners appeared soiled. Garlands and ornaments of the Daitya women dropped down at inopportune moments. Mirrors, armours, flags, swords, jewels, and robes became frequently unclean. Crores of skulls fell on the earth; drops of blood fell down in the midst of altars; bunches of hair fell down all round.
+      </div>
+      <div class="verse-dev">एतानि निमित्तानि दृष्ट्वा भण्डस्य सैनिकाः तं विज्ञापयामासुः।</div>
+    </div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 22–47 · Bhaṇḍa's Council · The Speeches of Viśukra and Viṣaṅga</div>
+      <div class="verse-text">
+        Although the portentous phenomena were intense and dreadful, Bhaṇḍa did not lose his courage. He went to the chamber of consultation and occupied an excellent throne studded with gems, resembling a piece of the body of Meru. His younger brothers Viśukra and Viṣaṅga served him with their heads bent down in reverence. All the vassal kings of Daityas came and bowed.
+        <br/><br/>
+        Viśukra spoke in a voice like the sound of the ocean being churned: "O Lord, from the fire into which the despondent Devas fell, a certain woman has cropped up. She is proud of her strength. A large number of female attendants equipped with weapons has been encouraged by the over-enthusiastic Devas. Alas, if a group of feeble women were to conquer us, it would be as if a stone is split by means of sprouts — a contemptible joke. Send ahead a servant from the commanders of the armies. Let him drag that foolish woman by her tresses."
+        <br/><br/>
+        Viṣaṅga, who was efficient, thoughtful, and prudent, spoke otherwise: "O Lord, every action should be carried out after due deliberation. Spies should be carefully sent to the enemy camp. Indifference should not be shown toward enemies, thinking them to be mere women — it is sure that power exists in everyone. Hiraṇyakaśipu was killed by a spirit that manifested from a pillar. The woman Caṇḍikā had killed Mahiṣa, Śumbha, and Niśumbha in battle. Let the activity of that woman be found out: Who is she? From where did she originate? What is her habit and practice? What is the source of assistance for her?"
+        <br/><br/>
+        Bhaṇḍa dismissed Viṣaṅga's counsel with contempt, calling him an "indulger in tidings of misfortune": "Everything connected with her has been observed by me through spies. A certain woman named Lalitā originated from fire. True to her name she is soft and delicate like a flower. There is no intrinsic strength, no vigour or wisdom in affairs connected with war — she depends much on Māyā. Who can defeat Bhaṇḍa whose greatness surpasses the three worlds?" He then listed the hundred sons and generals of his army and dispatched his commander Kuṭilākṣa to prepare for war.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADHYĀYA 22 -->
+<div class="page-marker">Page 22</div>
+<section id="adhyaya22" class="section-block">
+  <div class="section-header">
+    <div class="section-number">Adhyāya 22 · Brahmāṇḍa Purāṇa · Uttarabhāga</div>
+    <div class="section-title-dev">दुर्मदकुरण्डनिधनम्</div>
+    <div class="section-title-eng">Durmada and Kuraṇḍa Slain</div>
+    <div class="section-subtitle">The Sound of Bhaṇḍa's Drums · Sampatkarī's Elephant Battle · The Sword of Hayāsanā</div>
+  </div>
+
+  <div class="chapter-block">
+    <div class="chapter-label">Verses 1–108 · The First Battles</div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 1–35 · The Battle of Sampaddevī with Durmada</div>
+      <div class="verse-text">
+        The sound of the Dundubhi of the leading Asuras became a proud response to the war-drums of Śrīlalitā. Crores of Daityas prepared themselves furiously against Parameśvarī. One shone like a mobile Rohaṇa mountain in his coat of mail; a certain soldier waved an extremely bright sword terrible like the Kālarātri. Others displayed movement on horses in the street; some rode on elephants of huge-sized bodies.
+        <br/><br/>
+        Bhaṇḍa sent the fraudulent Dānava Durmada against Lalitā with ten Akṣauhiṇīs. Splitting the fourteen worlds with loud sounds of war-drums, Durmada went in her direction. On seeing him, Sampatsarasvatī (Sampatkarī) rushed towards him. Her army thrashed the Dānavas; great streams of blood of thousands of Dānavas struck down by the Śaktis began to flow. Torn and cut by arrows, banners scattered their emblems along with scores of umbrellas. The myriads of umbrellas that had fallen on the battle-ground red with blood could be compared to the moon in the midst of red clouds at dusk.
+        <br/><br/>
+        Durmada encouraged his routed army, mounted a camel, and rushed against the army of Śaktis. He showered Sampatkarī's forces with arrows — struck by them, the army became stunned for a moment. With red eyes, Sampadambikā rode on the elephant Raṇakolāhala and fought with him. The elephant Raṇakolāhala thrashed Daityas with his trunk, kicked them with his feet, struck them with his tusks, and butted with his huge head. Durmada hit a precious gem from Sampatkarī's crown with a powerful arrow — thereat, her eyes became red with anger, and she hit Durmada with arrows. Wounded on the chest, he gave up his ghost instantaneously.
+      </div>
+    </div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 69–108 · Kuraṇḍa Arrives · The Battle of the Goddess Hayāsanā</div>
+      <div class="verse-text">
+        On hearing that Durmada had been struck down, Bhaṇḍa became furious: "By whom can Bhaṇḍa be defeated? Despatch the general named Kuraṇḍa, the elder brother of Durmada, with twenty Akṣauhiṇīs, to defeat that wicked woman and drag her by her plaited hair violently."
+        <br/><br/>
+        Kuraṇḍa went to the battlefield on horseback, dug up the ground with dust columns, and taunted Sampatkarī: "You have killed my younger brother. My Raṇapūtanās drink the blood gushing from the crevasses of your body." He showered the circular military array of Sampatkarī's forces with arrows.
+        <br/><br/>
+        Thereat the goddess Caṇḍī came — riding on her horse — and said to Sampatkarī: "Dear friend, hand over the fight with this fellow to me. Forbear awhile." Then the Goddess Hayāsanā (Horse-faced) — riding the horse Aparājita — rushed against Kuraṇḍa. She showered arrows that pervaded ten directions. Kuraṇḍa shot with his Śārṅga bow. Even the goddess's horse split and hit the army of Dānavas with its hard and dreadful hoofs. Hayāsanā released her divine Pāśa (noose) weapon — crores of other nooses issued forth, binding the entire army. Kuraṇḍa cut the string of her bow. She struck at his chest with her goad — the life-blood of Kuraṇḍaka was quaffed by that blazing goad, and he fell down like a tree hit by thunderbolt. The Pūtanās issuing from the goad devoured the entire army.
+        <br/><br/>
+        On hearing that Kuraṇḍa was struck down along with his younger brother, the lord of Śūnyaka heaved a deep sigh like a hissing serpent.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADHYĀYA 23 -->
+<div class="page-marker">Page 24</div>
+<section id="adhyaya23" class="section-block">
+  <div class="section-header">
+    <div class="section-number">Adhyāya 23 · Brahmāṇḍa Purāṇa · Uttarabhāga</div>
+    <div class="section-title-dev">पञ्चासुरसेनापतिनिधनम्</div>
+    <div class="section-title-eng">Five Asura Generals Slain</div>
+    <div class="section-subtitle">Sarpiṇī the Serpent-Demoness · The Mongoose Goddess Nakulī · Golden Ichneumons</div>
+  </div>
+
+  <div class="chapter-block">
+    <div class="chapter-label">Verses 1–99 · The Serpent Māyā and Its Destruction</div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 4–20 · The Five Generals · Sarpiṇī Created</div>
+      <div class="verse-text">
+        Bhaṇḍa despatched five generals beginning with Karaṅka, along with a hundred Akṣauhiṇīs. The five haughty generals — Karaṅka, Vajradanta, Vajramukha, Vijradanta, and another — created in the course of their fight a huge Māyā named Sarpiṇī (the Serpent-Demoness). She was of smoky complexion with smoke-coloured lips and breasts. The hollow of her belly was as extensive as a great ocean. She moved ahead in the battle ground frightening the minds of Śaktis. She was like another Kadru — the source of origin of many illusory serpents. Many sinuous movements and dreadful screams accompanied her.
+        <br/><br/>
+        From Sarpiṇī's body came countless serpents — some like Takṣaka and Karkoṭaka, some of the lustre of Vāsuki. With mouths where two forked tongues moved about, they scattered various kinds of poison among the army of Śaktis: Pārada (quicksilver), Vatsanābha, Kālakūṭa, Saurāṣṭra poison, Brahmaputra, and Śaulkikeya poison. From her eyes came smoke-coloured serpents with two faces; from her ears, crores with yellow colour and three hoods; from her mouth, blue serpents with mouths at both ends; from her nostrils, brindled serpents with four mouths and four feet; from her hanging folds and navel, red serpents holding Halāhala poison.
+      </div>
+    </div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 51–96 · Nakulī and the Golden Mongooses</div>
+      <div class="verse-text">
+        On seeing the army overpowered and unnerved, goddess Nakulī (Mongoose) became furious. Riding on Garuḍa, she jumped into the fray. She was born of the palate of Lalitā; the entire realm of speech constituted her features. She was endowed with adamantine teeth.
+        <br/><br/>
+        On seeing the dreadful serpents born of Sarpiṇī's Māyā, Nakulī opened her mouth in fury — and the tips of her thirty-two teeth turned into thirty-two crores of mongooses with golden lustre. Cutting the groups of serpents into pieces by means of the crushing power of their curved teeth and neutralising their poison, golden ichneumons capable of dispelling poison wandered through that dreadful war. Raising their ears and shaking their hairs, the elated mongooses opened their mouths and bit the serpents. The jewels stuck on the weighty hoods of the serpents shone even after they had been bitten to death. The mongooses entered the open mouths of enemies, pulled at their tongues, and bit the bottoms. Tiny mongooses entered the different pores of enemies' bodies.
+        <br/><br/>
+        Nakulī fixed the Gāruḍa missile to her arrow — that missile which illuminated the faces of the quarters through formidable flames — and discharged it into the body of Sarpiṇī, absorbing and extinguishing the Sarpamāyā. With the destruction of the Māyā, Sarpiṇī dissolved.
+        <br/><br/>
+        Goddess Nakulī then chopped off the hard head of Karaṅka with her sharp-edged spear, and cut off the heads of the other four generals as well. On seeing this, Śyāmalāmbikā honoured that deity of great intrinsic strength who destroyed the wicked Asuras and granted her the status of a satellite deity.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADHYĀYA 24 -->
+<div class="page-marker">Page 25</div>
+<section id="adhyaya24" class="section-block">
+  <div class="section-header">
+    <div class="section-number">Adhyāya 24 · Brahmāṇḍa Purāṇa · Uttarabhāga</div>
+    <div class="section-title-dev">बलाहकादिसप्तसेनापतिनिधनम्</div>
+    <div class="section-title-eng">Seven Generals Beginning with Balāhaka Killed</div>
+    <div class="section-subtitle">The Solar Boon · Blind Vision · Tiraskaraṇikā's Blinding Missile · Seven Severed Heads</div>
+  </div>
+
+  <div class="chapter-block">
+    <div class="chapter-label">Verses 1–103 · The Seven Sons of Kīkasā and Their Defeat</div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 5–19 · The Seven Brothers · Their Boon from the Sun</div>
+      <div class="verse-text">
+        Bhaṇḍa sent seven generals beginning with Balāhaka along with thirty Akṣauhiṇīs. They were Balāhaka, Sūcīmukha, Phālamukha, Vikarṇa, Vikaṭānana, Karālākṣa, and Karaṭaka. All these seven were vigorous and mighty sons of Kīkasā. Their vehicles were remarkable: Balāhaka mounted a huge vulture named Saṃhāragupta that had risen from fire; Sūcīmukha rode a crow; Phālamukha a heron, holding a ploughshare for a weapon; Vikarṇa a Bheruṇḍa bird; Vikaṭānana a fierce cock; Karālākṣa a ghost that he had subdued by mantras in the cremation ground; Karaṭaka a vampire that was a Yojana tall.
+        <br/><br/>
+        These seven had formerly propitiated the sun-god by means of penance and received a boon: "You must be present in the cavities of our eyes during fights. With your intense heat and refulgence burn our antagonists. Whenever you are present within our eyes, let everything that becomes the object of our vision become motionless. Viewed by our eyes invigorated by your presence, the soldiers of our antagonists will become incapable of wielding their weapons." With this boon, the sons of Kīkasā moved about in that battlefield — and looked at by them, the innumerable weapons of Śaktis became immobilized.
+      </div>
+    </div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 74–99 · Tiraskaraṇikā's Blinding Missile · The Garland of Seven Heads</div>
+      <div class="verse-text">
+        At the bidding of the goddess, the deity Tiraskaraṇikā (Magical Veil) — the body-guard of Daṇḍanāthā — rose up in the arena of battle. That Mahāmāyā got into an aerial chariot named Tamolipta with doors all round and assured Śaktis about freedom from fear. She was dark-complexioned like a Tamāla tree; she wore a dark-coloured bodice; she was seated in the dark chariot yoked with dark-coloured horses. She took up a twanging bow named Vāsantī Mohana and discharged the great missile named Andha (the Blinding One) amidst the group of enemies.
+        <br/><br/>
+        Those seven Daityas who had been haughty on account of their solar boon were wounded by the missile Andha — their eyes were covered as if with a piece of cloth. With their vision gone, the immobilization of weapons came to an end. Once again Śaktis raised their weapons and fought.
+        <br/><br/>
+        Tiraskaraṇikā dragged the blinded Balāhaka by his hairs and cut him off with her sword. After cutting off the head of his vehicle vulture with an arrow, she proceeded to Sūcīmukha and cut off his head with a blow of her sharp spear. She gradually killed the other five Daityas too.
+        <br/><br/>
+        The deity Antardhidevatā made a garland with the seven severed heads of the Daityas — joining them by means of their own tresses — and wearing that garland round her neck she roared loudly. The Śaktis killed the entire army and made many rivers of blood flow. What was done by mother Mahāmāyā was the greatest miracle there.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADHYĀYA 25 -->
+<div class="page-marker">Page 27</div>
+<section id="adhyaya25" class="section-block">
+  <div class="section-header">
+    <div class="section-number">Adhyāya 25 · Brahmāṇḍa Purāṇa · Uttarabhāga</div>
+    <div class="section-title-dev">विषङ्गपलायनम्</div>
+    <div class="section-title-eng">Flight of Viṣaṅga</div>
+    <div class="section-subtitle">The Night Attack · Darkness as Ally · The Fifteen Nityā Deities · Jvālāmālinī Lights the Field</div>
+  </div>
+
+  <div class="chapter-block">
+    <div class="chapter-label">Verses 1–107 · The Night Attack and Its Repulsion by the Nityā Deities</div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 1–34 · Bhaṇḍa's Strategy · Viṣaṅga Sets Out in Darkness</div>
+      <div class="verse-text">
+        On hearing the killing of those generals, Bhaṇḍa held consultations with his brothers in a solitary place. He said: "Make an arrangement for someone to attack her from the rear. Viṣaṅga may be competent enough to carry out this task. Let fifteen generals who had proudly served in many battles go along with him. She has not many attendants in the back — she can easily be taken captive. A brilliant chariot ten Yojanas in height — with a great umbrella studded with pearls — is moving behind all other chariots. After finding her out by means of these signs, quietly pounce upon her. Only a limited number of soldiers need accompany you. Let fifteen Akṣauhiṇīs of soldiers proceed ahead but in disguise you pounce upon that wicked woman."
+        <br/><br/>
+        When the army had proceeded ahead, darkness set in — a dense darkness like the colour of a wild boar, like the blue throat of a peacock, spreading everywhere. To wicked Asuras, the night time contributes their increase in strength, as their skill in Māyā is enhanced by it.
+        <br/><br/>
+        The generals beginning with Damana put on dark-coloured coats of mail; dark-coloured turbans; all their equipment dark-coloured. No Dundubhi was sounded; no Mardala was heard. Enveloped in darkness, they proceeded ahead with concealed movements. Through the northern path they surrounded the army of Lalitā. They saw the lofty chariot Cakrarāja surrounded by the refulgent Śaktis.
+        <br/><br/>
+        Viṣaṅga attacked the rear of the leading Chariot with his soldiers. Dānavas of great strength smashed the army with sharp-edged spears, hammers, and Bhuśuṇḍis. The troop of Śaktis became suddenly excited. The demons had come and occupied the ninth step of the leading chariot. With invisible weapons called Vipāṭas they began to split and tear. An arrow discharged by Viṣaṅga shattered the royal fan of the goddess. The troop of Śaktis lamented before Lalitā.
+      </div>
+    </div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 74–107 · The Fifteen Nityā Deities · Jvālāmālinī · The Three-Yāma Battle</div>
+      <div class="verse-text">
+        On seeing the fury of Śrīdevī, the Nityā deities became greatly worried. They bowed to the goddess and spoke: "O Empress, cowardly and vicious Daityas eagerly devoted to Māyā and deceit are attacking from the rear. There are two Nityā deities — Vahnivāsinī and Jvālāmālinikā. In the battle with the light kindled by them both, Daityas will be clearly seen by us. Command us, O great queen, for the suppression of vicious fellows."
+        <br/><br/>
+        The goddess said "Let it be so." Then the Nityā deity Kāmeśvarī bowed to Lalitā and set out to kill those Daityas of evil conduct. Jvālāmālinikā and Vahnivāsinī brightened the battle-field by means of their refulgence. When the area of the battle was illuminated, the wicked Dānavas became furious as their bodies could be seen clearly. Those fifteen Nityā deities beginning with Kāmeśvarī — with weapons in their hands, roaring like lions — smashed Daityas easily as though in play.
+        <br/><br/>
+        The battle thus went on for three Yāmas (nine hours). The Akṣauhiṇīs were killed by the sharp arrows of Nityā deities: Kāmeśī killed the wicked Damana; Bhagamālā tore up Dīrghajihva; Nityaklinnā and Bheruṇḍā killed Humbeka and Hulumallaka; Vahnivāsā killed Kaklasa; Mahāvajreśvarī split Kalkivāhana; Śivadūtī sent Pulkasa to the abode of Yama; Tvaritā tore asunder Puṇḍraketu; Kulasundarī killed Caṇḍabāhu and Kukkura; Nīlapatākā and Vijayā made a sacrificial offering of Jambhaṇa; Sarvamaṅgalikā chopped off Tīkṣṇaśṛṅga; Jvālāmālinī killed Trikarṇaka; Citrā killed Candragupta.
+        <br/><br/>
+        When all the wicked generals had been killed, Viṣaṅga became extremely angry — but he was not killed by them because he was to be killed only by Daṇḍanāthā's arrow. He fled along with the soldiers who survived. The Nityā deities refrained from chasing a warrior who flees, and returned to bow down to goddess Śrīlalitā. By her mere merciful side-glance all their wounds were healed.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADHYĀYA 26 -->
+<div class="page-marker">Page 28</div>
+<section id="adhyaya26" class="section-block">
+  <div class="section-header">
+    <div class="section-number">Adhyāya 26 · Brahmāṇḍa Purāṇa · Uttarabhāga</div>
+    <div class="section-title-dev">भण्डासुरपुत्रनिधनम्</div>
+    <div class="section-title-eng">Bhaṇḍāsura's Sons Slain</div>
+    <div class="section-subtitle">The Fiery Enclosure · The Virgin Goddess Bālā · Thirty Arrows · Thirty Sons Slain</div>
+  </div>
+
+  <div class="chapter-block">
+    <div class="chapter-label">Verses 1–117 · Jvālāmālinī's Enclosure · The Battle of Bālā</div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 1–40 · Kuṭilākṣa Defeated · The Fiery Enclosure Built</div>
+      <div class="verse-text">
+        Even the mighty Kuṭilākṣa who was accompanied by an army of ten Akṣauhiṇīs was utterly defeated in the battle by the sharp arrows of Daṇḍanāthā and he fled from the field.
+        <br/><br/>
+        Mantriṇī and Daṇḍanāthā, distressed by the fraudulent night battle, approached Lalitā: "O Mother, in this matter let the deliberations be held. The base Dānavas beginning with Bhaṇḍa should be defeated during the period of their misery. An enormous camp hundred Yojanas in extent should be built on the southern side of the mountain Mahendra. Let a rampart of blazing fire be made for defence."
+        <br/><br/>
+        After hearing these words, Lalitā called the Nityā deity Jvālāmālinī: "O dear one, you have the form of fire. Let the defence of this great army be provided for by you. After encircling the ground to the extent of a hundred Yojanas, assume the form of a fiery flame thirty Yojanas in height. Leaving an opening of a Yojana, retain your blazing body elsewhere."
+        <br/><br/>
+        Daṇḍinī placed the leading chariot Rājacakraratha in the middle; her own chariot on the left side; Śyāmalā's chariot on the right side; Sampadīśī at the back; and Hayāsanā in front. At the entrance she stationed the deity Stambhinī with twenty Akṣauhiṇīs — this deity of Daṇḍanāthā is also known as Vighnadevī.
+      </div>
+    </div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 45–117 · The Virgin Goddess Bālā Fights Bhaṇḍa's Sons</div>
+      <div class="verse-text">
+        Bhaṇḍa called his thirty sons — Caturbāhu, Cakorākṣa, Catuśśiras, Vajraghoṣa, Ūrdhvakeśa, Mahākāya, Mahāhanu, Makhaśatru, Makhaskandī, Siṃhaghoṣa, and others — who were mighty with huge bodies. He despatched them to the battle front with two hundred Akṣauhiṇīs.
+        <br/><br/>
+        On hearing that the sons of Daitya Bhaṇḍa had come, Bālā — the daughter of Lalitā — showed interest in the fight. She was always like a nine-year-old girl yet was a great mine of all lores; her body was like the rising sun. She had been perpetually present near the footrest of the great queen — her vital breath moving externally. She said to the goddess: "Mother, the sons of Bhaṇḍa have come to fight. I wish to fight with them. This is my playful activity. By this play of fighting for a moment, I shall become delighted mentally."
+        <br/><br/>
+        Though the goddess warned that her limbs were tender and she was only nine years old and her training in warfare was fresh, Bālā requested again with steadfast decision. Observing her resolution, Śrīlalitā granted permission, clasped her closely, gave her one of her own armours and weapons, and sent her off in a covered palanquin yoked with hundreds of swans.
+        <br/><br/>
+        The deities on all the steps bowed down to her as she descended. Mantriṇī and Daṇḍanāthā were frightened on seeing the girl come out but accompanied her on either side to guard her. The entire army of Lalitā became her own army.
+        <br/><br/>
+        The Virgin showered volleys of arrows on the leading Daityas. Though she had only one physical form she appeared differently to each one of those sons of Daitya — like a series of reflections of the sun. By discharging the Nārāyaṇa missile, she reduced the army consisting of two hundred Akṣauhiṇīs to ashes within a trice. Then she discharged thirty arrows simultaneously — and the heads of all thirty sons of Bhaṇḍa were struck down by the thirty arrows with crescent-shaped tips discharged with great dexterity. The celestials standing in the sky showered flowers. Mantriṇī and Daṇḍanāthā joyfully embraced that daughter of the great queen.
+      </div>
+    </div>
+  </div>
+
+  <div class="footnote-block">
+    <div class="footnote-title">Footnotes · Adhyāya 26</div>
+    <p class="footnote" data-n="1">[1] The virgin goddess Bālā — the nine-year-old daughter of Lalitā — fights the thirty sons of Bhaṇḍa, establishing a poetic symmetry between the daughter of the Goddess and the sons of the enemy. The author notes that this implies Lalitā had been married for about nine or ten years before undertaking the campaign.</p>
+    <p class="footnote" data-n="2">[2] The fiery enclosure built by Jvālāmālinī becomes a recurring element in subsequent chapters — the sacred boundary that separates the army of Śakti from the forces of Bhaṇḍa.</p>
+  </div>
+</section>
+
+<!-- ADHYĀYA 27 -->
+<div class="page-marker">Page 30</div>
+<section id="adhyaya27" class="section-block">
+  <div class="section-header">
+    <div class="section-number">Adhyāya 27 · Brahmāṇḍa Purāṇa · Uttarabhāga</div>
+    <div class="section-title-dev">गणनाथविक्रमः</div>
+    <div class="section-title-eng">The Exploits of Gaṇanātha</div>
+    <div class="section-subtitle">The Jayavighna Yantra · Śaktis Demoralised · Gaṇeśa Born of Lalitā's Laughter · Destruction of the Yantra</div>
+  </div>
+
+  <div class="chapter-block">
+    <div class="chapter-label">Verses 1–104 · Viśukra's Yantra · Gaṇeśa's Birth and Victory</div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 24–52 · The Jayavighna Yantra and Its Evil Effects</div>
+      <div class="verse-text">
+        When the sons were killed, Bhaṇḍa called his brother Viśukra: "Go to the camp of the enemy with your body concealed by means of Māyā and operate the great Yantra called Jayavighna" (the Obstacle to Victory).
+        <br/><br/>
+        Seated in his magical chariot and enveloped in thick gloom, Viśukra reached the camp of Lalitā invisibly. He found the circular fiery enclosure extending to a hundred Yojanas. He stood outside and prepared the mystical diagram: he wrote the Yantra in a huge rocky slab a Gavyūti in length and width. In the eight directions he drew figures of eight tridents with Saṃhārākṣaras on top. The Yantra had eight presiding deities — Alasā, Kṛpaṇā, Dinā, Nitandrā, Pramīlikā, Klībā, Gītā, and Ahaṃkārā — the personifications of tendencies that create disaffection and demoralise an army. Viśukra infused the Yantra with a Mantra, performed its worship, and hurled it into the enemy camp.
+        <br/><br/>
+        As an adverse effect of that Yantra, the Śaktis stationed within the camp became dejected: "What is to be done by killing Asuras? What benefit is achieved by victory? Who is this Daṇḍinī? Who is that Mantriṇī? Who is the great queen? Let this war come to a close. Sleep alone is conducive to pleasure. Nothing else yields mental rest so much as Ālasya (Idleness)." Thus the Śaktis cast away their weapons, overwhelmed by sleep.
+        <br/><br/>
+        Mantriṇī and Daṇḍanāthā were not adversely affected. They climbed up the Cakrasyandana chariot and reported to Lalitā: "O goddess, the Śaktis have ceased to be active. They do not pay heed to your commands. They make vulgar statements — 'Who is this Daṇḍinī? Who is the great queen?' The exceedingly powerful enemy has come with the terrific sounds of war-drums."
+      </div>
+    </div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 67–104 · The Birth of Gaṇeśa · Destruction of the Yantra · The Boon</div>
+      <div class="verse-text">
+        Thereupon, goddess Lalitā glanced at the face of Kāmeśvara. She then laughed — displaying a row of extremely red teeth. In the mass of lustre of her smile, a certain god became visible: He had the face of an elephant. Ichor was oozing from the middle of his temple. The mass of his matted hair appeared like Pāṭalā flowers. He held the crescent moon. In his ten hands he held citron fruit, mace, sugarcane bow, trident, lotus, noose, blue lotus, bunch of grain, goad, and a jewel-set pot. He had a pot-belly. He was moon-crested. He was embraced by Siddhilakṣmī. He bowed down to Maheśvarī.
+        <br/><br/>
+        After being blessed by her, the great elephant-faced lord of the Gaṇas quickly set off to shatter the Jayavighna Yantra. He found the amulet secretly fixed somewhere and — by hitting with his tusks that produced dreadful noise — reduced the huge slab to powder instantaneously. Along with the wicked deities posted there, he cast it off in air.
+        <br/><br/>
+        Thereupon, Śaktis got rid of their lethargy. The elephant-faced lord created numerous other elephant-faced heroes similar to himself. The six Vighnanāyakas — Āmoda, Pramoda, Sumukha, Durmukha, Arighna, and Vighnakartā — went out of the enclosure to assist Mahāgaṇapati. They made uproarious sounds through their wrathful Huṃkāras and clashed with the Dānavas. Gaṇanātha fought with Viśukra of great prowess. Thousands of elephant-faced heroes frightened the army of Daityas, encircling them with their trunks, piercing their vital parts with tusks, pounding them with their chests, crushing them with their feet, and frightening the armies with the loud sounds of conches.
+        <br/><br/>
+        Gaṇeśvara smashed Gajāsura along with his seven Akṣauhiṇīs in single-handed combat on his mouse vehicle. After completing the task, Mahāgaṇapati went to the presence of Lalitā. Highly pleased, the great queen granted the following boon: <strong>the right of being worshipped before the worship of all other deities.</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="phil-box">
+    <div class="phil-box-title">The Birth of Gaṇeśa from Lalitā's Laughter · Theological Note</div>
+    <p>The unusual narrative of Gaṇeśa arising from the laughter of Lalitā (rather than from Pārvatī's body as in the more common Purāṇic account) is a deliberate attempt by the Lalitopākhyāna to enhance the Goddess's glory: in this telling, the elephant-headed god who is worshipped first in all Hindu rites is himself born from the Goddess's own spontaneous joy. His boon — of being worshipped before all other deities — thus also ultimately honours the Goddess, since Gaṇeśa is her own son and his honour is her honour. The six Vighnanāyakas around him further emphasise the auspicious powers of these deities as aspects of the Goddess's own creative and protective nature.</p>
+  </div>
+
+  <div class="footnote-block">
+    <div class="footnote-title">Footnotes · Adhyāya 27</div>
+    <p class="footnote" data-n="1">[1] The eight deities presiding over the Jayavighna Yantra (Alasā, Kṛpaṇā, Dinā etc.) are personifications of psychological tendencies — laziness, avarice, weariness, sleepiness, drowsiness, unmanliness, pride, and false ego — that destroy an army's fighting spirit. The Yantra may be symbolic of fifth-columnists or enemy agents of the ancient period. The belief in such destructive black magic dates from the Atharvaveda.</p>
+    <p class="footnote" data-n="2">[2] The Saptaśatī account of Gaṇeśa's birth (from Pārvatī) is said by the author to have been "formerly explained" — this Purāṇa is composing a rival, Śākta-centred version where Lalitā, not Pārvatī, is the mother.</p>
+  </div>
+</section>
+
+<!-- ADHYĀYA 28 -->
+<div class="page-marker">Page 32</div>
+<section id="adhyaya28" class="section-block">
+  <div class="section-header">
+    <div class="section-number">Adhyāya 28 · Brahmāṇḍa Purāṇa · Uttarabhāga</div>
+    <div class="section-title-dev">विशुक्रविषङ्गनिधनम्</div>
+    <div class="section-title-eng">Viśukra and Viṣaṅga Slain</div>
+    <div class="section-subtitle">The Thirst Missile · The Ocean of Liquor · Mantriṇī Kills Viśukra · Daṇḍanāthā Slays Viṣaṅga</div>
+  </div>
+
+  <div class="chapter-block">
+    <div class="chapter-label">Verses 1–114 · The Great Battle of the Third Day</div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 1–36 · Both Brothers Set Out · The Four Hundred Akṣauhiṇīs</div>
+      <div class="verse-text">
+        Bhaṇḍa sent both his brothers — Viṣaṅga and Viśukra — together to the battle along with all the soldiers. Four hundred Akṣauhiṇīs of soldiers moved ahead with them, together with ten haughty nephews — sons of Dhūminī (the sister of Bhaṇḍa) — born with great strength.
+        <br/><br/>
+        Viśukra reached the battle-field riding on his elephant, fully rendered splendid with the umbrella and chowries constituting the symbol of the Crown Prince. Mantriṇī and Daṇḍanāyikā came to fight in their excellent chariots — Kiricakra and Jñeyacakra. At the bidding of Lalitā, an army of a hundred Akṣauhiṇīs had been placed by both of them for the protection of the Cakraratharāja.
+        <br/><br/>
+        In the battle-field: Daṇḍanāthā fought with Viṣaṅga; Śyāmā (Mantriṇī) fought with Viśukra. Aśvārūḍhā fought with Ulūkajit; Sampadīśā clashed with the Demon Puruṣeṇa; Nakulī challenged Kuntiṣeṇa; Unmattabhairavī fought with Malada; Laghuśyāmā fought with Kuśūra; Svapneśī fought with the Daitya Maṅgala; Vāgvādinī clashed with Draghaṇa; Caṇḍakālī fought with Kolāṭa.
+      </div>
+    </div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 43–93 · The Thirst Missile · The Ocean of Liquor · Revival of the Śaktis</div>
+      <div class="verse-text">
+        Viśukra, on observing the army of Śaktis increasing in power and his own decreasing, drew his heavy bow and discharged the Tṛṣāstra (Missile of Thirst) over the army of Śaktis. An acute fever of thirst raged — it made the root of the palate parched, the ear cavities rough and arid; feebleness pervaded the body; weapons dropped off one by one.
+        <br/><br/>
+        Mantriṇī advised Daṇḍanāthā: "There is an ocean of cold water in one of the steps of your chariot. That Madirāsindhu (Ocean of Liquor) alone will satisfy the troops. Command that noble-souled one who can enhance their great strength."
+        <br/><br/>
+        The golden-coloured ocean of liquor — languid with intoxication and reddened eyes — divided himself into various units of various colours: some pale red like the midday sun, some dark like Tāpiccha (Indian cinnamon), some white. The king of oceans showered crores of sweet currents of liquor as thick as trunks of elephants — the ocean of liquor by whose mere fragrance even the dead man might rise up perfectly well.
+        <br/><br/>
+        The liquors showered were of varieties: Gauḍī, Paiṣṭī, Mādhvī, Kādambarī, Haintālī, Lāṅgaleya, divine liquors from the Kalpa tree, liquors from various countries with good taste and fragrance, sparkling with foams and bubbles, making pleasing sound when foams rise, with all types of tastes — pungent, astringent, sweet, bitter, slightly sour — dispelling pain of wounds, bringing about union in broken bones, cool liquors dispelling vertigo. Each of the Yoginīs joyously drank the torrent uninterruptedly for one full Yāma.
+        <br/><br/>
+        Śaktis went on drinking with their eyes closed, faces supine, tongues lolling. The ocean of liquor then said to Daṇḍanāthā: "The army that had been stupefied has been revived and gladdened by me. Some are dancing and singing with their girdles tinkling sweetly. Some are laughing with their breasts shaking and bouncing. Some begin to swagger as garments slip from their hips."
+        <br/><br/>
+        Daṇḍinī gratified the ocean of liquor with a boon: "In the age of Dvāpara you will be extremely worthy of being used by priests in their sacrifices. All the deities will drink you after you have been sanctified by Mantras in the course of sacrifice. All these great people will drink you — Maheśvarī, Mahādeva, Baladeva, Bhārgava, Dattātreya, Vidhi, and Viṣṇu."
+      </div>
+    </div>
+
+    <div class="verse">
+      <div class="verse-num">Verses 93–114 · Mantriṇī Kills Viśukra · Daṇḍanāthā Slays Viṣaṅga</div>
+      <div class="verse-text">
+        Intoxicated due to fresh wine, their eyes reddened, Śaktis fell upon the troops of Daityas sportively. Their weapons sparkled on account of redness due to inebriation; their eyes sparkled on account of the blood of Daityas. Daṇḍinī shattered a hundred Akṣauhiṇīs; Mantriṇī annihilated a hundred and fifty Akṣauhiṇīs; Aśvārūḍhā and others slew another hundred and fifty. Turagārohiṇī smashed Ulūkajit with the excessively sharp goad and made him a guest in the other world.
+        <br/><br/>
+        When the sun set, Śyāmalā became excessively angry and fought with Viśukra. One by one she cut off and split his keen weapons. She cut his flagstaff, charioteer, bowstring, and the staff of the bow by means of arrows. With the miraculous missile named Brahmaśiras that had the brilliance of sparkling fire she shattered Viśukra. He fell down with his body ground to powder.
+        <br/><br/>
+        Daṇḍanāthā — extremely proud of her ability — fought with Viṣaṅga using maces. Both shattered each other's limbs with dreadful boisterous laughter. They went round and round; they heaved from side to side; they encircled each other quickly; they struck by means of batons and rods, stupefying each other frequently. She fought with him till midnight. Thereupon she became very furious and dragged him with the ploughshare that pierced deep into his head. She struck a hard blow with her iron club. On account of the blow, the great Asura had to abandon his vital airs. With his body shattered into a hundred pieces, he fell on the ground.
+        <br/><br/>
+        After completing this great task, Mantriṇī and Daṇḍanāyikā spent the remaining part of the night there itself in the direction of the camp.
+      </div>
+    </div>
+  </div>
+
+  <div class="footnote-block">
+    <div class="footnote-title">Footnotes · Adhyāya 28</div>
+    <p class="footnote" data-n="1">[1] The Tṛṣāstra (Missile of Thirst) is one of several astras in the battle sequence that convert a psychological or physical state into a weapon. The author's ingenuity in converting vices, virtues, physical and mental handicaps into Astras reaches its climax in the subsequent battle with Bhaṇḍāsura himself (Adhyāya 29).</p>
+    <p class="footnote" data-n="2">[2] The varieties of wine listed in verses 71–76 give varieties of liquors known in ancient India — Gauḍī (from molasses), Paiṣṭī (from grain), Mādhvī (from honey), Kādambarī (from Kadamba flowers), and others, including regional varieties. Soma-juice is equated with wine and the use of Soma in sacrifices is attributed to the wine-ocean's provision of wine to Śaktis in this battle.</p>
+    <p class="footnote" data-n="3">[3] The battle comes to a standstill for sometime while Śaktis drink wine (recorded as one full Yāma = three hours). The period and the effects of drinking are described in remarkable detail, suggesting the author drew on direct observation of states of inebriation.</p>
+  </div>
+</section>
+
+<!-- SONIC ANALYSIS -->
+<div class="page-marker">Page 34-B · Sonic Analysis</div>
+<hr class="page-break"/>
+
+<section id="sonic-analysis" class="section-block" aria-label="Nāda Mēḷa Svara Sonic Analysis">
+<div id="sonic-analysis-section">
+
+  <div class="sonic-masthead">
+    <div class="sonic-seed-mantra">ॐ ललिता ध्यान</div>
+    <div class="sonic-part-label">Brahmāṇḍa Purāṇa · Uttarabhāga · Session VI · Supplementary Analysis</div>
+    <div class="sonic-devanagari-title">नाद-मेल-स्वर-विश्लेषणम्</div>
+    <div class="sonic-h1">Sonic Analysis</div>
+    <p class="sonic-subtitle">Nāda · Mēḷakarta · Svara · Alaṅkāra — Cross-Referenced to Part VI Nāmas 575–766</p>
+    <div class="sonic-edition-line">Supplementary Session · Part VI · Before Colophon</div>
+  </div>
+
+  <nav class="sonic-tab-nav" aria-label="Sonic Analysis Sections">
+    <button class="sonic-tab-btn s-active" onclick="sonicShowTab('nada')" aria-selected="true">I · Nāda Philosophy</button>
+    <button class="sonic-tab-btn" onclick="sonicShowTab('svara')" aria-selected="false">II · Sapta Svara &amp; 12 Octaves</button>
+    <button class="sonic-tab-btn" onclick="sonicShowTab('mela')" aria-selected="false">III · 72 Mēḷakarta Rāgas</button>
+    <button class="sonic-tab-btn" onclick="sonicShowTab('alankara')" aria-selected="false">IV · 9 Alaṅkāras</button>
+    <button class="sonic-tab-btn" onclick="sonicShowTab('xref')" aria-selected="false">V · Cross-Reference VI</button>
+  </nav>
+
+  <!-- TAB I -->
+  <div id="sonic-tab-nada" class="sonic-tab-panel s-active">
+    <div class="page-marker">Sonic Analysis · Page I</div>
+    <div class="sonic-sec-header">
+      <div class="sonic-sec-num">Section I · Nāda Philosophy</div>
+      <div class="sonic-sec-dev">नादब्रह्म — मातृकावर्णसंगीतम्</div>
+      <div class="sonic-sec-eng">Nādabrahma · Mātṛkā Letters as Sonic Body · The Goddess's Sonic Theology in Part VI</div>
+      <div class="sonic-sec-sub">Mattā · Mātṛkāvarṇarūpiṇī · Svāhā · Svadhā · The Goddess as Complete Sonic Cosmos</div>
+    </div>
+
+    <p class="intro-prose">
+      Part VI's sonic theology is anchored in three extraordinary nāmas: <span class="highlight-dev">मत्ता</span> (576 — the intoxicated fullness of pure sound), <span class="highlight-dev">मातृकावर्णरूपिणी</span> (577 — she who IS the alphabet), and <span class="highlight-dev">नादरूपिणी</span> (cross-referenced from Part IV, 338). These three together present the complete Nādabrahman doctrine: the Goddess as the substance of all sound (Mātṛkā), as the rapture of sound absorbed in itself (Mattā), and as the primordial sound-vibration that is the universe's constitutive energy (Nāda).
+    </p>
+
+    <div class="chapter-block">
+      <div class="chapter-label">The Mātṛkā Doctrine and Karnatic Music</div>
+      <div class="chapter-title-dev">मातृकाशक्तिः संगीते</div>
+      <div class="chapter-title-eng">The Fifty Letters as Sonic Foundation of the Seventy-Two Mēḷas</div>
+      <div class="verse">
+        <div class="verse-num">The Fifty Mātṛkā Letters as Sonic Matrix</div>
+        <div class="verse-text">The Sanskrit alphabet consists of fifty phonemes arranged in a specific order — sixteen vowels (<em>svaras</em>) and thirty-four consonants (<em>vyañjanas</em>). The Tantric tradition identifies each of these fifty sounds with a specific goddess, a specific energy centre in the body, and a specific cosmic power. The teaching of <em>Mātṛkā-varṇa-rūpiṇī</em> (577) is that these fifty sounds are the Goddess's sonic body: not merely sounds she makes but sounds she IS.
+        <br/><br/>
+        The direct connection to Karnatic music theory is through the svaras: the Sanskrit word <em>svara</em> means both "vowel" (in grammar) and "musical note" (in music theory). The seven musical svaras (Sa, Ri, Ga, Ma, Pa, Dha, Ni) are the sonic children of the sixteen grammatical vowels — both categories derive from the Goddess's Mātṛkā body. This is why the Nāṭyaśāstra assigns each musical svara to a specific vowel sound, and why musicological texts consistently begin with invocations of Sarasvatī and Lalitā as the sovereign of all sonic arts.</div>
+      </div>
+      <div class="verse">
+        <div class="verse-num">The Goddess as Svāhā and Svadhā · Music as Sacrifice</div>
+        <div class="verse-text">Nāmas 535–536 (Part V) identify the Goddess with Svāhā and Svadhā — the sacrificial invocations that precede and follow all Vedic offerings. In Karnatic music, the rāga rendering is traditionally understood as a form of sacrifice (<em>yajña</em>) — the offering of sound into the fire of the devotee's concentrated attention. The vocalist's breath is the sacrificial fuel; the rāga is the prayer; the silence at the end of a phrase is the moment of Svāhā. This understanding, preserved in the Karnatic tradition through the compositions of Tyāgarāja and Muthuswāmi Dīkṣitar, is the direct application of the Goddess's Svāhā-identity to musical practice.</div>
+      </div>
+    </div>
+
+    <blockquote>
+      <p>"The fifty Mātṛkā letters are the cosmic body of the Goddess; the seven svaras are the earthly echo of that body. When a musician correctly sings Ṣaḍja — the ground note — they touch the Goddess at her most foundational. When they sing Gāndhāra — the heart note — they touch her in the place where devotion and beauty meet. The Mātṛkā doctrine is not a metaphor. It is a precise mapping of the human voice onto the divine body."</p>
+      <cite>— Veṅkaṭamakhī, Caturdaṇḍī-prakāśikā, introductory chapter (interpretation)</cite>
+    </blockquote>
+
+    <div class="footnote-block">
+      <div class="footnote-title">Footnotes · Section I</div>
+      <p class="footnote" data-n="1">[1] The Mātṛkā doctrine is most fully developed in the Mālinī-vijaya-tantra and in Abhinavagupta's Tantrāloka. The fifty letters correspond to the fifty petals of the six cakras plus the Sahasrāra — each petal is a letter, each letter a goddess.</p>
+      <p class="footnote" data-n="2">[2] The connection between Mātṛkā letters and musical svaras is made explicit in Śārṅgadeva's Saṅgīta-ratnākara, which is the foundational text for both Karnatic and Hindustāni classical music theories.</p>
+    </div>
+  </div>
+
+  <!-- TAB II -->
+  <div id="sonic-tab-svara" class="sonic-tab-panel">
+    <div class="page-marker">Sonic Analysis · Page II</div>
+    <div class="sonic-sec-header">
+      <div class="sonic-sec-num">Section II · Sapta Svara and Dvādaśa Octave Positions</div>
+      <div class="sonic-sec-dev">सप्तस्वर-द्वादशस्थान-विचारः</div>
+      <div class="sonic-sec-eng">Seven Notes · Twelve Chromatic Positions · Theological Correspondences with Part VI Nāmas</div>
+      <div class="sonic-sec-sub">Ṣaḍja to Niṣāda · The Fixed and the Moving · Sat-Cit-Ānanda as Tonal Structure</div>
+    </div>
+
+    <p class="intro-prose">
+      The Sat-Cit-Ānanda formula of nāma 700 — the most philosophically concentrated nāma of Part VI — has a direct sonic equivalent in the tonal structure of the saptasvara. Sat (pure being) corresponds to Ṣaḍja — the immovable ground note, the ontological foundation. Cit (pure consciousness) corresponds to Pañcama — the immovable fifth, the witness that neither rises nor sets. Ānanda (pure bliss) corresponds to the Gāndhāra — specifically the Antara Gāndhāra of the higher mēḷas, whose shimmering quality most closely approaches the sonic equivalent of rapturous bliss.
+    </p>
+
+    <div class="sonic-svara-grid">
+      <div class="sonic-svara-card">
+        <div class="sonic-svara-num">Svara I · Ground</div>
+        <div class="sonic-svara-dev">षड्ज</div>
+        <div class="sonic-svara-roman">Ṣaḍja · Sa</div>
+        <div class="sonic-svara-desc">The immovable tonic. Corresponds to Sat (pure being) and to the Goddess as <em>Sarvādhārā</em> (659) — the support of all. Fixed in every mēḷa without exception.</div>
+        <div class="sonic-svara-deity">Nāma 659: Sarvādhārā — She who is the support of all</div>
+      </div>
+      <div class="sonic-svara-card">
+        <div class="sonic-svara-num">Svara II · Courage</div>
+        <div class="sonic-svara-dev">ऋषभ</div>
+        <div class="sonic-svara-roman">Ṛṣabha · Ri (3 positions)</div>
+        <div class="sonic-svara-desc">Three positions: R1 (Śuddha), R2 (Catusśruti), R3 (Ṣaṭśruti). The step away from the root. Corresponds to the Goddess as <em>Vikrāntā</em> — the courageous one who moves forward.</div>
+        <div class="sonic-svara-deity">Nāma 750: Maheśvarī — the great sovereign stepping forward</div>
+      </div>
+      <div class="sonic-svara-card">
+        <div class="sonic-svara-num">Svara III · Heart</div>
+        <div class="sonic-svara-dev">गान्धार</div>
+        <div class="sonic-svara-roman">Gāndhāra · Ga (2 positions)</div>
+        <div class="sonic-svara-desc">G2 (Sādhāraṇa) and G3 (Antara). The heart note — Antara Ga produces the quality of Ānanda. G3's luminosity corresponds to the Goddess as <em>Ānandakalikā</em> (729).</div>
+        <div class="sonic-svara-deity">Nāma 729: Ānandakalikā — the bud of bliss</div>
+      </div>
+      <div class="sonic-svara-card">
+        <div class="sonic-svara-num">Svara IV · Pivot</div>
+        <div class="sonic-svara-dev">मध्यम</div>
+        <div class="sonic-svara-roman">Madhyama · Ma (2 positions)</div>
+        <div class="sonic-svara-desc">M1 (Śuddha) and M2 (Prati). The pivot of the octave. Prati Ma creates tension and longing — corresponding to the Goddess as <em>Māyā</em> (716), the creative illusion that creates longing for resolution.</div>
+        <div class="sonic-svara-deity">Nāma 716: Māyā — the creative tension of longing</div>
+      </div>
+      <div class="sonic-svara-card">
+        <div class="sonic-svara-num">Svara V · Witness</div>
+        <div class="sonic-svara-dev">पञ्चम</div>
+        <div class="sonic-svara-roman">Pañcama · Pa (Fixed)</div>
+        <div class="sonic-svara-desc">The immovable fifth — never altered in any mēḷa. Corresponds to Cit (pure consciousness) and to the Goddess as <em>Vimarśarūpiṇī</em> (548) — the self-reflective witness.</div>
+        <div class="sonic-svara-deity">Nāma 700: Saccidānandarūpiṇī — Pa as Cit</div>
+      </div>
+      <div class="sonic-svara-card">
+        <div class="sonic-svara-num">Svara VI · Beauty</div>
+        <div class="sonic-svara-dev">धैवत</div>
+        <div class="sonic-svara-roman">Dhaivata · Dha (3 positions)</div>
+        <div class="sonic-svara-desc">Three positions: D1, D2, D3. The note of beauty and longing — in many major rāgas carries the emotional weight. Corresponds to the Goddess as <em>Kāntiḥ</em> (449) — radiant beauty.</div>
+        <div class="sonic-svara-deity">Nāma 665: Ekākinī — the solitary beauty of Dha</div>
+      </div>
+      <div class="sonic-svara-card">
+        <div class="sonic-svara-num">Svara VII · Return</div>
+        <div class="sonic-svara-dev">निषाद</div>
+        <div class="sonic-svara-roman">Niṣāda · Ni (2 positions)</div>
+        <div class="sonic-svara-desc">N2 (Kaiśika) and N3 (Kākali). The seventh note of completion — leads inevitably back to Sa. Corresponds to the Goddess as <em>Muktidā</em> (736) — who gives liberation and return to the source.</div>
+        <div class="sonic-svara-deity">Nāma 736: Muktidā — liberation as the return to Sa</div>
+      </div>
+    </div>
+
+    <div class="footnote-block">
+      <div class="footnote-title">Footnotes · Section II</div>
+      <p class="footnote" data-n="1">[1] The Sat-Cit-Ānanda / Sa-Pa-Ga correspondence is not a formal equivalence but a structural homology: both the philosophical triad and the tonal triad describe a three-part structure that constitutes a complete reality — Sat/Sa as ground, Cit/Pa as witness, Ānanda/Ga as fruition.</p>
+      <p class="footnote" data-n="2">[2] The immovability of Sa and Pa in all 72 mēḷas mirrors the immovability of Sat and Cit in all manifestations: the ground of being and the witnessing awareness never change, while all other qualities (represented by the moveable svaras Ri, Ga, Ma, Dha, Ni) vary from one condition to another.</p>
+    </div>
+  </div>
+
+  <!-- TAB III -->
+  <div id="sonic-tab-mela" class="sonic-tab-panel">
+    <div class="page-marker">Sonic Analysis · Page III</div>
+    <div class="sonic-sec-header">
+      <div class="sonic-sec-num">Section III · Selected Mēḷakartas · Part VI Cross-Reference</div>
+      <div class="sonic-sec-dev">मेलकर्त-राग-षष्ठभाग-अन्वयः</div>
+      <div class="sonic-sec-eng">Fourteen Key Mēḷas · Theological Resonance with Nāmas 575–766</div>
+      <div class="sonic-sec-sub">From Sovereignty to Liberation · The Rāgas of Compassion · The Battle Rāgas</div>
+    </div>
+
+    <p class="intro-prose">
+      Part VI's theological range — from the intimate languor of the Mādhvī-intoxicated Goddess (575) through the imperial sovereignty series (684–692) to the liberation epithets (736–737) and the nature-metaphors of cosmic relief (742–749) — maps onto a distinctive set of mēḷakartas. The sovereignty nāmas correspond to rāgas of stately dignity; the liberation nāmas to rāgas of expansive openness; the nature-metaphor nāmas to rāgas of emotional power and catharsis.
+    </p>
+
+    <table class="sonic-mela-table" aria-label="Selected Mēḷakartas with Part VI Cross-Reference">
+      <thead>
+        <tr>
+          <td class="sonic-mela-num">No.</td>
+          <td class="sonic-mela-dev">Mēḷakarta Name</td>
+          <td>Svara Set (R·G·M·D·N)</td>
+          <td>Cakra / Rasa</td>
+          <td class="sonic-mela-deity">Part VI Nāma Resonance</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="sonic-mela-num">1</td><td class="sonic-mela-dev">कनकाङ्गी</td><td>R1 G1 M1 D1 N1</td><td>Indu / Śānta</td><td class="sonic-mela-deity">Mādhvī-pāna-ālasā (575) — the gentle languor of divine contentment</td></tr>
+        <tr><td class="sonic-mela-num">8</td><td class="sonic-mela-dev">हनुमत्तोडि</td><td>R1 G2 M1 D1 N2</td><td>Netra / Karuṇa</td><td class="sonic-mela-deity">Dayā-mūrtiḥ (581) — personification of compassion; Bhairavī-family pathos</td></tr>
+        <tr><td class="sonic-mela-num">15</td><td class="sonic-mela-dev">मायामाळवगौळ</td><td>R1 G3 M1 D1 N3</td><td>Agni / Bhakti</td><td class="sonic-mela-deity">Māyā (716) — the sovereign creative illusion; this mēḷa is the standard for Karnatic beginners</td></tr>
+        <tr><td class="sonic-mela-num">20</td><td class="sonic-mela-dev">नठभैरवी</td><td>R1 G2 M1 D1 N3</td><td>Veda / Bhakti</td><td class="sonic-mela-deity">Daitya-hantrī (599) — destroyer of demons; Bhairavī-clan's fierce compassion</td></tr>
+        <tr><td class="sonic-mela-num">22</td><td class="sonic-mela-dev">खरहरप्रिया</td><td>R2 G2 M1 D2 N2</td><td>Veda / Śānta</td><td class="sonic-mela-deity">Sarvagā (702) — omnipresence; Kharaharapriyā's evenness across all positions</td></tr>
+        <tr><td class="sonic-mela-num">28</td><td class="sonic-mela-dev">हरिकाम्भोजी</td><td>R2 G3 M1 D2 N2</td><td>Bāṇa / Śṛṅgāra</td><td class="sonic-mela-deity">Śiva-priyā (409, Pt.V) — beloved of Śiva; resonates also with Dākṣāyaṇī (598)</td></tr>
+        <tr><td class="sonic-mela-num">29</td><td class="sonic-mela-dev">धीरशङ्कराभरण</td><td>R2 G3 M1 D2 N3</td><td>Bāṇa / Vīra</td><td class="sonic-mela-deity">Rāja-rājeśvarī (684) — the ruler of all rulers; this rāga's stately dignity fits the sovereign nāmas</td></tr>
+        <tr><td class="sonic-mela-num">36</td><td class="sonic-mela-dev">चलनाट</td><td>R3 G3 M1 D3 N3</td><td>Ṛtu / Raudra</td><td class="sonic-mela-deity">Caṇḍikā (755) / Mahāgrāsā (752) — the fierce devouring aspect; battle nāmas</td></tr>
+        <tr><td class="sonic-mela-num">45</td><td class="sonic-mela-dev">शुभपन्तुवराळि</td><td>R1 G2 M2 D1 N2</td><td>Vasu / Karuṇa</td><td class="sonic-mela-deity">Lajjā (740) — modesty as divine quality; this rāga's plaintive quality mirrors lajjā's shyness</td></tr>
+        <tr><td class="sonic-mela-num">51</td><td class="sonic-mela-dev">पन्तुवराळि</td><td>R1 G2 M2 D1 N3</td><td>Brahma / Bhayānaka</td><td class="sonic-mela-deity">Bhava-dāva-sudhā-vṛṣṭiḥ (742) — rain on the forest fire; this rāga's anguished quality before resolution</td></tr>
+        <tr><td class="sonic-mela-num">55</td><td class="sonic-mela-dev">श्यामलाङ्गी</td><td>R2 G2 M2 D2 N3</td><td>Disi / Karuṇa</td><td class="sonic-mela-deity">Mantriṇī (Śyāmalā) — the dark-complexioned minister; this mēḷa bears her name</td></tr>
+        <tr><td class="sonic-mela-num">65</td><td class="sonic-mela-dev">मेचकल्याणि</td><td>R2 G3 M2 D2 N3</td><td>Rudra / Ānanda</td><td class="sonic-mela-deity">Sac-cid-ānanda-rūpiṇī (700) — the supreme Sat-Cit-Ānanda formula; Kalyāṇī is the rāga of Lalitā</td></tr>
+        <tr><td class="sonic-mela-num">66</td><td class="sonic-mela-dev">चित्राम्बरी</td><td>R2 G3 M2 D3 N2</td><td>Rudra / Adbhuta</td><td class="sonic-mela-deity">Divya-vigrahā (621) — the divine body; Citrāmbarī's unusual colour suggests the extraordinary</td></tr>
+        <tr><td class="sonic-mela-num">72</td><td class="sonic-mela-dev">रसिकप्रिया</td><td>R3 G3 M2 D3 N3</td><td>Āditya / Śṛṅgāra</td><td class="sonic-mela-deity">Prema-rūpā (730) — She who is pure love; the culminating mēḷa for the ultimate rasa</td></tr>
+      </tbody>
+    </table>
+
+    <div class="phil-box">
+      <div class="phil-box-title">Mēḷa 55 — Śyāmaḷāṅgī and Mantriṇī</div>
+      <p>Mēḷa 55, <span class="highlight-roman">Śyāmaḷāṅgī</span> (literally "the dark-limbed one"), bears the name of Mantriṇī Śyāmalā herself — the dark-complexioned Minister-Goddess who plays the central role in Adhyāyas 17, 28, and the broader battle narrative. This mēḷa's svara configuration (R2 G2 M2 D2 N3) creates a characteristic sound with the unusual combination of Prati Madhyama and Kākali Niṣāda — a combination that produces a sound simultaneously melancholic and strangely beautiful, perfectly matching Śyāmalā's role: the wise, slightly sorrowful counsellor who carries the burden of governance while the Goddess shines in transcendence.</p>
+    </div>
+  </div>
+
+  <!-- TAB IV -->
+  <div id="sonic-tab-alankara" class="sonic-tab-panel">
+    <div class="page-marker">Sonic Analysis · Page IV</div>
+    <div class="sonic-sec-header">
+      <div class="sonic-sec-num">Section IV · The Nine Alaṅkāras · Part VI Connections</div>
+      <div class="sonic-sec-dev">नवालङ्कार-षष्ठभाग-अन्वयः</div>
+      <div class="sonic-sec-eng">Nine Musical Ornaments · Correspondences with Part VI Nāmas and Battle Narratives</div>
+      <div class="sonic-sec-sub">Mādhvī-Intoxication as Alaṅkāra · The Lāsya Dance · The Nine Rasas of the Battle</div>
+    </div>
+
+    <p class="intro-prose">
+      Part VI's distinctive contribution to the sonic theology is through the battle narratives of Adhyāyas 20–28, which present an extraordinary range of emotional states — the nine rasas fully deployed: Śṛṅgāra in the description of the Goddess's beauty (575–582), Vīra in the battles of Sampatkarī and Hayāsanā, Raudra in the boastful speech of Bhaṇḍa, Karuṇa in the grief for fallen generals, Adbhuta in the mongoose-creation of Nakulī and the birth of Gaṇeśa from Lalitā's laughter, Bhayānaka in the portents of Śūnyaka, Bībhatsa in the rivers of blood, Hāsya in the intoxicated Śaktis dancing after the ocean of liquor, and Śānta in the final return to the fiery camp. This nine-rasa deployment exactly mirrors the nine-alaṅkāra structure of classical Karnatic music training.
+    </p>
+
+    <div class="sonic-alankara-grid">
+      <div class="sonic-alankara-card">
+        <div class="sonic-alankara-num">Alaṅkāra I · Sama</div>
+        <div class="sonic-alankara-dev">सम — संतुलनम्</div>
+        <div class="sonic-alankara-roman">Balance and Evenness</div>
+        <div class="sonic-alankara-desc">The equal ascending and descending movement. In Part VI: the Goddess as <em>Sadvya-pītāsana</em> — the balanced sovereignty of nāmas 684–692, where no single attribute overwhelms the others. Rasa: Śṛṅgāra.</div>
+        <div class="sonic-alankara-pattern">Nāma 693: Satya-sandhā — balanced truth; Nāma 700: Saccidānandarūpiṇī</div>
+      </div>
+      <div class="sonic-alankara-card">
+        <div class="sonic-alankara-num">Alaṅkāra II · Tāra</div>
+        <div class="sonic-alankara-dev">तार — आरोहणम्</div>
+        <div class="sonic-alankara-roman">The Ascending Leap</div>
+        <div class="sonic-alankara-desc">Ascending leaps followed by stepwise descent. In Part VI: the armies' march toward battle (Adhyāya 22), the Goddess ascending from the fiery enclosure. Rasa: Vīra — heroic aspiration.</div>
+        <div class="sonic-alankara-pattern">Adhyāya 22: Durmada's march and defeat — ascending pride followed by sudden fall</div>
+      </div>
+      <div class="sonic-alankara-card">
+        <div class="sonic-alankara-num">Alaṅkāra III · Mandra</div>
+        <div class="sonic-alankara-dev">मन्द्र — अवरोहणम्</div>
+        <div class="sonic-alankara-roman">The Descending Grounding</div>
+        <div class="sonic-alankara-desc">Stepwise descent, the grounding movement. In Part VI: the Goddess as <em>Dayā-mūrtiḥ</em> (581) — compassion descending toward the suffering devotee. Rasa: Karuṇa.</div>
+        <div class="sonic-alankara-pattern">Nāma 581: Dayā-mūrtiḥ — compassion as the grace descending from above</div>
+      </div>
+      <div class="sonic-alankara-card">
+        <div class="sonic-alankara-num">Alaṅkāra IV · Jantu</div>
+        <div class="sonic-alankara-dev">जन्तु — द्विगुणम्</div>
+        <div class="sonic-alankara-roman">The Doubled Note</div>
+        <div class="sonic-alankara-desc">Each svara repeated twice. In Part VI: the Portent-series (Adhyāya 21) where every omen is doubled in intensity — cranes crying twice, meteors falling in pairs. Rasa: Bhayānaka.</div>
+        <div class="sonic-alankara-pattern">Adhyāya 21, verses 5–20: doubled portents of Śūnyaka</div>
+      </div>
+      <div class="sonic-alankara-card">
+        <div class="sonic-alankara-num">Alaṅkāra V · Rohaṇa</div>
+        <div class="sonic-alankara-dev">रोहण — क्रमारोहणम्</div>
+        <div class="sonic-alankara-roman">The Step-by-Step Ascent</div>
+        <div class="sonic-alankara-desc">The Kuṇḍalinī's ascent through the cakras. In Part VI: the Goddess's gradual revelation — from languid Mādhvī-intoxication (575) through Mātṛkā body (577) to Kailāsa (578) to the cosmic womb (637). Rasa: Adbhuta.</div>
+        <div class="sonic-alankara-pattern">Nāmas 575→578→587→590: gradual revelation of sovereign completeness</div>
+      </div>
+      <div class="sonic-alankara-card">
+        <div class="sonic-alankara-num">Alaṅkāra VI · Avaroha</div>
+        <div class="sonic-alankara-dev">अवरोह — कृपाप्रवाहः</div>
+        <div class="sonic-alankara-roman">The Descent of Grace</div>
+        <div class="sonic-alankara-desc">Pure stepwise descent — the Goddess's grace flowing downward through the cakra system into embodied life. In Part VI: the Ocean of Liquor descending as sweet currents from the sky (Adhyāya 28). Rasa: Ānanda.</div>
+        <div class="sonic-alankara-pattern">Adhyāya 28, verses 59–77: Madirāsindhu descending like rain</div>
+      </div>
+      <div class="sonic-alankara-card">
+        <div class="sonic-alankara-num">Alaṅkāra VII · Sthāya</div>
+        <div class="sonic-alankara-dev">स्थाय — ध्यानम्</div>
+        <div class="sonic-alankara-roman">The Contemplative Dwelling</div>
+        <div class="sonic-alankara-desc">Dwelling on specific svaras before moving. In Part VI: the sovereignty nāmas (684–700) where each epithet dwells on a different facet of sovereignty before moving to the next. Rasa: Śānta — the stillness of absolute rule.</div>
+        <div class="sonic-alankara-pattern">Nāmas 684–700: sixteen nāmas of sovereignty as sixteen dwelling-notes</div>
+      </div>
+      <div class="sonic-alankara-card">
+        <div class="sonic-alankara-num">Alaṅkāra VIII · Vakra</div>
+        <div class="sonic-alankara-dev">वक्र — विचित्रगतिः</div>
+        <div class="sonic-alankara-roman">The Curved / Zigzag</div>
+        <div class="sonic-alankara-desc">Non-linear movement. In Part VI: the battle of Nakulī with the Sarpiṇī (Adhyāya 23) — the sinuous movement of serpents and mongooses, each zigzagging through the other. Rasa: Bībhatsa / Adbhuta.</div>
+        <div class="sonic-alankara-pattern">Adhyāya 23: serpents' zigzag motion as Vakra alaṅkāra</div>
+      </div>
+      <div class="sonic-alankara-card">
+        <div class="sonic-alankara-num">Alaṅkāra IX · Miśra</div>
+        <div class="sonic-alankara-dev">मिश्र — सम्पूर्णता</div>
+        <div class="sonic-alankara-roman">The Complete Synthesis</div>
+        <div class="sonic-alankara-desc">All patterns combined. In Part VI: the eight nature-metaphors of nāmas 742–749 — each a synthesis of ascent (affliction) and descent (relief), dwelling (the metaphor's completion) and movement (to the next). Rasa: all nine simultaneously.</div>
+        <div class="sonic-alankara-pattern">Nāmas 742–749: eight metaphors as the Miśra alaṅkāra of the entire session</div>
+      </div>
+    </div>
+
+    <div class="phil-box">
+      <div class="phil-box-title">The Lāsya Dance and Musical Alaṅkāra</div>
+      <p>Nāma 738 — <span class="highlight-roman">Lāsya-priyā</span> (She who is fond of the Lāsya dance) — provides the most direct connection between Part VI's nāmas and musical alaṅkāra theory. The Lāsya dance, associated with Pārvatī and the feminine principle of grace, is characterised by <em>alaṅkāra</em> in the original sense of the word: beautification, ornamentation, the rendering of movement into art. The Lāsya is not merely movement but movement made beautiful — precisely what musical alaṅkāra does to the bare svara-sequence. The Goddess's fondness for Lāsya is thus also her fondness for the very process by which music oraments the plain scale into expressive, devotional beauty.</p>
+    </div>
+  </div>
+
+  <!-- TAB V -->
+  <div id="sonic-tab-xref" class="sonic-tab-panel">
+    <div class="page-marker">Sonic Analysis · Page V</div>
+    <div class="sonic-sec-header">
+      <div class="sonic-sec-num">Section V · Cross-Reference · Part VI Nāmas 575–766</div>
+      <div class="sonic-sec-dev">षष्ठभाग-नाम-संगीत-अन्वयः</div>
+      <div class="sonic-sec-eng">Nāmas 575–766 — Sonic and Musical Cross-References</div>
+      <div class="sonic-sec-sub">Rāga Resonance · Svara Correspondence · Gamaka · Battle Scenes</div>
+    </div>
+
+    <p class="intro-prose">
+      This cross-reference table maps specific nāmas from Part VI (575–766) and key narrative moments from Adhyāyas 20–28 to their most significant sonic and musical dimensions. The battle scenes generate their own musical associations — the sound of the divine war-drums (the Ocean-Dundubhi of Adhyāya 16), the crashing of armies, and the singing of the daughters of Mātaṅga in Śrīpura are all part of the Lalitopākhyāna's sonic theology.
+    </p>
+
+    <table class="sonic-xref-table" aria-label="Cross-Reference: Part VI Nāmas to Sonic Elements">
+      <thead>
+        <tr>
+          <td class="sonic-xref-num">Nāma / Ref.</td>
+          <td class="sonic-xref-dev">Name (Sanskrit)</td>
+          <td>Rāga Resonance</td>
+          <td>Svara · Gamaka</td>
+          <td class="sonic-xref-sonic">Sonic-Theological Note</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="sonic-xref-num">575</td><td class="sonic-xref-dev">माध्वीपानालसा</td><td>Kanakaṅgī (1)</td><td>Sa · Odava</td><td class="sonic-xref-sonic">The ground note held in supreme contentment — Ālasā as the svara that neither rises nor falls but rests in itself</td></tr>
+        <tr><td class="sonic-xref-num">576</td><td class="sonic-xref-dev">मत्ता</td><td>Nāṭa (36)</td><td>R3·G3 · Kampita</td><td class="sonic-xref-sonic">The all-variant rāga corresponding to the fullness of divine intoxication that contains all flavours</td></tr>
+        <tr><td class="sonic-xref-num">577</td><td class="sonic-xref-dev">मातृकावर्णरूपिणी</td><td>All 72 mēḷas</td><td>All 12 positions</td><td class="sonic-xref-sonic">She is the alphabet — therefore she is all possible svara configurations; all 72 mēḷas are her sonic body</td></tr>
+        <tr><td class="sonic-xref-num">581</td><td class="sonic-xref-dev">दयामूर्तिः</td><td>Hanumattōḍi (8)</td><td>G2 · Āndola</td><td class="sonic-xref-sonic">Sādhāraṇa Gāndhāra's quality of tender anguish-turned-compassion mirrors the Dayā-mūrtiḥ perfectly</td></tr>
+        <tr><td class="sonic-xref-num">590</td><td class="sonic-xref-dev">कटाक्षकिङ्करीभूत...</td><td>Kalyāṇī (65)</td><td>G3·M2 · Kampita</td><td class="sonic-xref-sonic">Kalyāṇī's sovereign luminosity is the sonic equivalent of millions of Lakṣmīs subdued by a single glance</td></tr>
+        <tr><td class="sonic-xref-num">598</td><td class="sonic-xref-dev">दाक्षायणी</td><td>Śaṅkarābharaṇa (29)</td><td>Pa · Acala</td><td class="sonic-xref-sonic">The immoveable fifth — Satī's non-negotiable devotion to Śiva, which even death could not alter</td></tr>
+        <tr><td class="sonic-xref-num">603</td><td class="sonic-xref-dev">गुरुमूर्तिः</td><td>Tōḍi (8)</td><td>G2 · Jāru</td><td class="sonic-xref-sonic">Tōḍi's serious gravity — the characteristic sound of the guru's weight and authority</td></tr>
+        <tr><td class="sonic-xref-num">613</td><td class="sonic-xref-dev">काव्यालापविनोदिनी</td><td>Śyāmaḷāṅgī (55)</td><td>N3 · Pratyāhata</td><td class="sonic-xref-sonic">The rāga of Mantriṇī / Śyāmalā who governs the palace of music and poetry in Śrīpura</td></tr>
+        <tr><td class="sonic-xref-num">626</td><td class="sonic-xref-dev">त्रिपुरा</td><td>Trisaptā (all three kūṭa rāgas)</td><td>Ma1·Ma2 · Kampita</td><td class="sonic-xref-sonic">Tripurā encompasses all three Madhyamas simultaneously — M1 (first kūṭa), the junction, and M2 (second kūṭa)</td></tr>
+        <tr><td class="sonic-xref-num">658</td><td class="sonic-xref-dev">इच्छाशक्तिज्ञानशक्ति...</td><td>Three rāgas: Bhairavī·Kalyāṇī·Nāṭa</td><td>Tri-svara synthesis</td><td class="sonic-xref-sonic">Icchā = Bhairavī (desire's longing); Jñāna = Kalyāṇī (wisdom's luminosity); Kriyā = Nāṭa (action's force)</td></tr>
+        <tr><td class="sonic-xref-num">700</td><td class="sonic-xref-dev">सच्चिदानन्दरूपिणी</td><td>Mechakalyāṇī (65)</td><td>Sa·Pa·G3 synthesis</td><td class="sonic-xref-sonic">Sa = Sat, Pa = Cit, Antara Ga = Ānanda — the three pillars of Kalyāṇī as Saccidānanda</td></tr>
+        <tr><td class="sonic-xref-num">716</td><td class="sonic-xref-dev">माया</td><td>Māyāmāḷavagauḷa (15)</td><td>G3·N3 · Āndola</td><td class="sonic-xref-sonic">This mēḷa bears her name — the first rāga taught to Karnatic students is literally the rāga of Māyā</td></tr>
+        <tr><td class="sonic-xref-num">738</td><td class="sonic-xref-dev">लास्यप्रिया</td><td>Kīravāṇi (21)</td><td>D1 · Gamaka-all</td><td class="sonic-xref-sonic">Kīravāṇi's graceful, sinuous quality mirrors the Lāsya dance's flowing feminine movement</td></tr>
+        <tr><td class="sonic-xref-num">742–749</td><td class="sonic-xref-dev">भवदाव... मृत्युदारु...</td><td>Eight rāgas of relief</td><td>Moving resolution</td><td class="sonic-xref-sonic">Each metaphor-nāma maps to a rāga that moves from tension to resolution — Bhairavī to Kalyāṇī</td></tr>
+        <tr><td class="sonic-xref-num">Adhy. 20</td><td class="sonic-xref-dev">किरिचक्ररथ</td><td>Nāṭa (36)</td><td>All ṣaṭśruti · Force</td><td class="sonic-xref-sonic">The chariot's rattling creaking sound over the ground — Nāṭa's aggressive all-variant force</td></tr>
+        <tr><td class="sonic-xref-num">Adhy. 23</td><td class="sonic-xref-dev">नकुली-सर्पिणी</td><td>Jog / Śuddha Dhanyāsi</td><td>Vakra·Jāru</td><td class="sonic-xref-sonic">Pentatonic rāgas whose sinuous melodic contour mirrors the serpent-and-mongoose battle</td></tr>
+        <tr><td class="sonic-xref-num">Adhy. 27</td><td class="sonic-xref-dev">गणनाथविक्रमः</td><td>Gambhīranāṭa</td><td>R3·G3·N3 · Dīrgha</td><td class="sonic-xref-sonic">The thundering sound of Gaṇeśa's tusks shattering the Yantra — Gambhīranāṭa's deep, resonant force</td></tr>
+        <tr><td class="sonic-xref-num">Adhy. 28</td><td class="sonic-xref-dev">मदिरासिन्धु</td><td>Kalyāṇī / Bahudārī</td><td>M2 · Kampita</td><td class="sonic-xref-sonic">The ocean of liquor descending — Prati Madhyama's intoxicating sweetness; the rāga of celestial joy</td></tr>
+        <tr><td class="sonic-xref-num">766</td><td class="sonic-xref-dev">जपापुष्पनिभाकृतिः</td><td>Ranjani</td><td>D1 (no D) · Odava</td><td class="sonic-xref-sonic">Ranjani's pentatonic warmth and the deep red of the hibiscus — the most intimate sonic closing of Part VI</td></tr>
+      </tbody>
+    </table>
+
+    <div class="phil-box">
+      <div class="phil-box-title">Methodological Note · Part VI Additions to the Cross-Reference Methodology</div>
+      <p>Part VI introduces two new categories of sonic cross-reference not present in Parts IV and V: (<em>i</em>) <strong>Battle-Scene Rāgas</strong> — the narrative episodes of Adhyāyas 20–28 generate their own sonic associations through the acoustic descriptions of the text itself (the sound of the Ocean-Dundubhi, the roaring of Vajraghoṣa the lion, the singing of Mantriṇī's Śaktis, the crashing of the Jayavighna Yantra). (<em>ii</em>) <strong>Three-Kūṭa Rāga Synthesis</strong> — the Pañcadaśī mantra's three kūṭas (first Vāgbhava, second Kāmarāja, third Śakti) are mapped onto three distinct rāga families representing three emotional registers, providing a framework for ritual music in the Śrī Vidyā tradition. Both methodological additions are offered as exploratory rather than canonical — they represent the direction in which the tradition's own musicological speculations point.</p>
+    </div>
+
+    <div class="footnote-block">
+      <div class="footnote-title">Footnotes · Section V</div>
+      <p class="footnote" data-n="1">[1] The assignment of the three kūṭas to three rāga families — Bhairavī (longing/Icchā), Kalyāṇī (knowledge/Jñāna), Nāṭa (action/Kriyā) — follows the emotional taxonomy implicit in the respective rāgas' traditional usages. Bhairavī is the rāga of unfulfilled longing; Kalyāṇī of luminous clarity; Nāṭa of martial energy.</p>
+      <p class="footnote" data-n="2">[2] Ranjani (used for nāma 766) is a pentatonic rāga (omitting Ṣaḍja-position Dhaivata and Ṛṣabha) of exceptional warmth — its name means "that which delights." Its use as the closing rāga of the cross-reference table is intentional: the hibiscus flower is the Goddess's most intimate offering, and Ranjani is the most intimate rāga.</p>
+      <p class="footnote" data-n="3">[3] Cross-references to Parts IV (338) and V (391, 548) are maintained in the table where Part VI nāmas explicitly echo earlier theological positions. The Sahasranāma is not a linear sequence but a spiral — each session revisits earlier themes at a deeper level.</p>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- COLOPHON -->
+<div class="page-marker">Page 35</div>
+<section id="colophon" class="colophon">
+  <div class="final-dev">ॐ तत् सत्</div>
+  <p>Thus concludes the Sixth Session of the Lalitopākhyāna — Part VI.</p>
+  <p>Nāmas 575–766 · Adhyāyas 20–28 of the Brahmāṇḍa Purāṇa · Uttarabhāga</p>
+  <p><em>After Bhāskararāya Makhin · Śaṅkarācārya · The Brahmāṇḍa Purāṇa</em></p>
+  <p style="margin-top:1rem;">Scholarly Edition · Session VI · 35 Pages · lalithafive.culturalmusings.com</p>
+  <div style="margin:1.8rem 0;color:var(--gold);font-size:1.3rem;letter-spacing:.3em;opacity:.7;">❈ ❈ ❈</div>
+  <p style="font-family:'Noto Serif Devanagari',serif;font-size:1.1rem;color:var(--crimson);">श्री ललिताम्बा प्रसन्नतु</p>
+  <p><em>May Śrī Lalitāmbā be gracious.</em></p>
+  <div class="nav-links">
+    <a href="https://lalithafive.culturalmusings.com/">← Part V · Nāmas 366–574</a>
+    <a href="https://lalithatwo.culturalmusings.com/">Lalitā Home</a>
+    <a href="https://lalithafive.culturalmusings.com/">Part VI (This Page)</a>
+  </div>
+  <div style="margin-top:2rem;font-family:'Cinzel',serif;font-size:.68rem;letter-spacing:.15em;color:var(--gold-dim);">BRAHMĀṆḌA PURĀṆA · UTTARABHĀGA · LALITOPĀKHYĀNA · PART VI</div>
+</section>
+
+</main>
+
+<button id="scrolltop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>
+document.addEventListener('click',function(e){
+  var panel=document.getElementById('toc-panel');
+  var toggle=document.getElementById('toc-toggle');
+  if(panel.classList.contains('open')&&!panel.contains(e.target)&&e.target!==toggle){
+    panel.classList.remove('open');
+  }
+});
+document.querySelectorAll('#toc-panel a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.getElementById('toc-panel').classList.remove('open');
+  });
+});
+window.addEventListener('scroll',function(){
+  var btn=document.getElementById('scrolltop');
+  if(window.scrollY>400){btn.classList.add('visible');}
+  else{btn.classList.remove('visible');}
+});
+
+/* ── SONIC TAB SWITCHER ── */
+function sonicShowTab(id){
+  document.querySelectorAll('.sonic-tab-panel').forEach(function(p){
+    p.classList.remove('s-active');
+  });
+  document.querySelectorAll('.sonic-tab-btn').forEach(function(b){
+    b.classList.remove('s-active');
+    b.setAttribute('aria-selected','false');
+  });
+  var panel=document.getElementById('sonic-tab-'+id);
+  if(panel){panel.classList.add('s-active');}
+  var btns=document.querySelectorAll('.sonic-tab-btn');
+  var map={nada:0,svara:1,mela:2,alankara:3,xref:4};
+  if(map[id]!==undefined&&btns[map[id]]){
+    btns[map[id]].classList.add('s-active');
+    btns[map[id]].setAttribute('aria-selected','true');
+  }
+}
+</script>
+</body>
+</html>
